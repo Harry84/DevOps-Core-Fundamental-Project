@@ -3,11 +3,11 @@ DevOps pathway core fundamental project
 
 Objectives for Day1:
 
-Set up a new VM including enabling ssh
-Add it to allowed connections on an sql server
-Install Jenkins on it
-Clone this repo down
-Add some files from an existing project as a template to work from including testing
-Add a corresponding jenkins job
-Include basic ERD in repo
+1. Set up a new VM including enabling ssh
+2. Add it to allowed connections on an sql server
+3. Install Jenkins on it
+4. Clone this repo down
+5. Add some files from an existing project as a template to work from including testing
+6. Add a corresponding jenkins job
+7. Include basic ERD in repo
 
