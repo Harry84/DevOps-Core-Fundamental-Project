@@ -9,5 +9,7 @@ Objectives for Day1:
 4. Clone this repo down
 5. Add some files from an existing project as a template to work from including testing
 6. Add a corresponding jenkins job
-7. Include basic ERD in repo
+7. Run a build or two to confirm it's working
+8. Set up a webhook?
+9. Include basic ERD in repo
 
