@@ -1,7 +1,7 @@
 # DevOps-Core-Fundamental-Project: 
 ## Harry Potter Sorting Hat
 
-This is a basic web app intended to allow users (Users aka Prospective Students) to register to attend each of the four houses at Hogwarts.
+This is a basic web app intended to allow users (aka Prospective Hogwarts Students) to register to attend one of the four houses at Hogwarts.
 
 As a MVP two tables will be included in a relational db.  Users enter their name via a form and request to join one of the four houses.
 Their name is then appended to a list of students within each house.
