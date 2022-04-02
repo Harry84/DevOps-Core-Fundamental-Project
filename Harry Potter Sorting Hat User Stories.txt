@@ -37,7 +37,7 @@ As a user I want to be able to delete a student record
 
 As the examiner I would like to:
 
-test that most or all of the above is possible via automated tests
+test that most or all of the above CRUD functionality is possible via automated tests
 
 
 
