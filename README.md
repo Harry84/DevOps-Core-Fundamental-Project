@@ -13,7 +13,7 @@ years.
 ### Approach
 
 I aim to use an agile approach in carrying out this project.  I will interpret user stories corresponding to my understanding of the MVP
-and how it applies in the case of this project.  On a daily basis, I will then set tasks to enable these user stories.  Given the short 
+and how it applies here.  On a daily basis, I will then set tasks to enable these user stories.  Given the short 
 turnaround time of the project I will view each day as its own sprint and try to allocate tasks to my Trello board in the morning, as well 
 updating the backlog, sprint backlog and completed sprint at the end of each day.  I will demonstrate I am doing this via numbered screenshots 
 of my Trello board which I will include in this repo, along with any accompanying documents which I will include links to below.
