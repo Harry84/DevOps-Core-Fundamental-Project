@@ -1,5 +1,6 @@
 # DevOps-Core-Fundamental-Project: 
 ## Harry Potter Sorting Hat
+### Intro
 
 This is a basic web app intended to allow users (aka Prospective Hogwarts Students) to register to attend one of the four houses at Hogwarts.
 
