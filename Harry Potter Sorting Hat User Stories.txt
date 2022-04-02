@@ -4,7 +4,7 @@ Must Have
 
 Must meet MVP definition: a project that satisfies the minimum passing requirements of the assignment
 
-As the examiner I want to see the following evidenced in the proejct:
+As the examiner I want to see the following evidenced in the project in order that it may pass:
 
 At least 2 tables that share a relationship
 CRUD functionality
