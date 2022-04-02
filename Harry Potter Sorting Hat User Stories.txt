@@ -65,6 +65,6 @@ Another table
 Won't have:
 
 A good looking front end
-Any CSS or JSS
+Any CSS or JS
 Buttons/interactivity for the user
 login system
