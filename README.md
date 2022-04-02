@@ -7,7 +7,7 @@ This is a basic web app intended to allow users (aka Hogwarts Students) to regis
 As an MVP, two tables will be included in a relational db - one for houses and a second for student names - a one to many relationship - there are many students but each may only belong to one of the four houses.  Users enter their name via a form and select a house to join.
 Their name is then appended to a list of students within that house which they can then see displayed on a roster/home page along with the names of students in the other houses.
 
-Ideally I will try to include a random element to assign houses (sorting hat) and potentially will extend to include another table, student 
+Ideally I will try to include a random element to assign houses (sorting hat) to prospective students and potentially will extend to include another table, student 
 years.
 
 ### Approach
