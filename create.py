@@ -1,20 +1,24 @@
 from application import db
-from application.models import Houses, BasicForm
+from application.models import Houses
 
-# db.drop_all()
+db.drop_all()
 db.create_all()
 
-# new_house = Houses(name="Gryffindor")
-# db.session.add(new_house)
-# db.session.commit()
+new_house = Houses(house_name="Gryffindor")
+db.session.add(new_house)
+db.session.commit()
 
-# new_house = Houses(name="Hufflepuff")
-# db.session.add(new_house)
-# db.session.commit()
+new_house = Houses(house_name="Hufflepuff")
+db.session.add(new_house)
+db.session.commit()
 
-# new_house = Houses(name="Slytherin")
-# db.session.add(new_house)
-# db.session.commit()
+new_house = Houses(house_name="Slytherin")
+db.session.add(new_house)
+db.session.commit()
+
+new_house = Houses(house_name="Ravenclaw")
+db.session.add(new_house)
+db.session.commit()
 
 '''HOW TO DO VARIOUS METHODS - CRUD'''
 

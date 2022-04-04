@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hogwarts Student Intake</title>
+    </head>
+    <body style="text-align: center">
+        <h1>Sorting Hat App</h1>
+	  <div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                {{ form.name.label }} {{ form.name }}
+                <br>
+                {{ form.houseID.label }} {{ form.houseID}}
+                <br>
+		{{ form.submit }}   <span><a href="{{ url_for('addhouses') }}">Add a House</a></span>
+            </form>
+        </div>
+	<div class='students'>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>House</th>
+		</tr>
+	{% for students in studentss %}
+	<tr>
+		<td>{{students.student_name}}</td><td> {{students.house_idbr.house_name}}</td>
+	</tr>
+	{% endfor %}
+	</table>
+	</div>
+    </body>
+</html>
+
