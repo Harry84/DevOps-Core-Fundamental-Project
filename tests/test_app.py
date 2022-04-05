@@ -1,26 +1,19 @@
-# Import the necessary modules
 from flask import url_for
 from flask_testing import TestCase
 
-# import the app's classes and objects
 from application import app, db
 from application.models import Students, Houses 
 
-# Create the base class
 class TestBase(TestCase):
     def create_app(self):
-
-        # Pass in testing configurations for the app. 
-        app.config.update(SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:password@35.246.83.95:3306/flask_example_db',
-                SECRET_KEY='tangerines',
-                DEBUG=True,
+ 
+        app.config.update(SQLALCHEMY_DATABASE_URI='sqlite:///',
                 WTF_CSRF_ENABLED=False
                 )
         return app
 
-    # Will be called before every test
     def setUp(self):
-        # Create table
+        
         db.drop_all()
         db.create_all()
         # Create test houses
@@ -36,9 +29,8 @@ class TestBase(TestCase):
             db.session.add(students)
         db.session.commit()
 
-    # Will be called after every test
     def tearDown(self):
-        # Close the database session and remove all contents of the database
+        
         db.session.remove()
         db.drop_all()
 
@@ -75,7 +67,7 @@ class TestAdd(TestBase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'TestHouse', response.data)
 
-# Write a test to test delete all functionality
+# Write tests to test delete functionality
 class TestDelete(TestBase):
 #removing an existing student
     def test_delete_student(self):
