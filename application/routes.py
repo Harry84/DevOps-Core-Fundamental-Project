@@ -68,14 +68,4 @@ def update(name):
     first_student.student_name = name
     db.session.commit()
     return redirect(url_for('register'))
-
-
-# # @app.route('/delete')
-# # def delete():
-# #     first_house = Houses.query.first()
-# #     db.session.delete(first_house)
-# #     db.session.co mmit()
-# #     return "First house deleted"
-
-
-# '''--------------------------------------'''
+    

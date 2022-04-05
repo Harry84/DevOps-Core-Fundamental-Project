@@ -36,11 +36,11 @@ class TestBase(TestCase):
             db.session.add(students)
         db.session.commit()
 
-    # Will be called after every test
-    def tearDown(self):
-        # Close the database session and remove all contents of the database
-        db.session.remove()
-        db.drop_all()
+    # # Will be called after every test
+    # def tearDown(self):
+    #     # Close the database session and remove all contents of the database
+    #     db.session.remove()
+    #     db.drop_all()
 
 # Write a test class to test Read functionality
 class TestRead(TestBase):
@@ -51,6 +51,11 @@ class TestRead(TestBase):
         self.assertIn(b"yellow",response.data)
         self.assertIn(b"blue",response.data)
         self.assertIn(b"green",response.data)
+        self.assertIn(b"Jessica",response.data)
+        self.assertIn(b"Henry",response.data)
+        self.assertIn(b"Giles",response.data)
+        self.assertIn(b"Esme",response.data)
+
 
     def test_readHous(self):
         response = self.client.get(url_for('addhouses'))
@@ -69,3 +74,36 @@ class TestAdd(TestBase):
         response = self.client.post(url_for('addhouses'), data = dict(name="TestHouse"), follow_redirects=True)
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'TestHouse', response.data)
+
+# Write a test to test delete all functionality
+class TestDelete(TestBase):
+#removing an existing student
+    def test_delete_student(self):
+        response = self.client.get(url_for('delete_student', name="Esme"), follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertNotIn(b'Esme', response.data)
+# #trying to remove a student that doesn't exist - seems to lower coverage for some reason
+#     def test_delete_student(self):
+#         response = self.client.get(url_for('delete_student', name="Boris"), follow_redirects=True)
+#         self.assertEqual(response.status_code, 200)
+#deleting all students
+    def test_delete_students(self):       
+        response = self.client.get(url_for('clearall'), follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertNotIn(b'TestHouse', response.data)
+
+class TestCount(TestBase):
+    def test_count_students(self):
+        response = self.client.get(url_for('count_students'), follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"4", response.data)
+
+class TestUpdate(TestBase):
+    def test_update_student(self):
+        response = self.client.get(url_for('update', name="Marie"), follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'Marie', response.data)
+        self.assertNotIn(b'Jessica', response.data)
+
+
+
