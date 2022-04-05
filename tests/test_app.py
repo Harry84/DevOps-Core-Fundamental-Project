@@ -36,11 +36,11 @@ class TestBase(TestCase):
             db.session.add(students)
         db.session.commit()
 
-    # # Will be called after every test
-    # def tearDown(self):
-    #     # Close the database session and remove all contents of the database
-    #     db.session.remove()
-    #     db.drop_all()
+    # Will be called after every test
+    def tearDown(self):
+        # Close the database session and remove all contents of the database
+        db.session.remove()
+        db.drop_all()
 
 # Write a test class to test Read functionality
 class TestRead(TestBase):
@@ -82,10 +82,9 @@ class TestDelete(TestBase):
         response = self.client.get(url_for('delete_student', name="Esme"), follow_redirects=True)
         self.assertEqual(response.status_code, 200)
         self.assertNotIn(b'Esme', response.data)
-# #trying to remove a student that doesn't exist - seems to lower coverage for some reason
-#     def test_delete_student(self):
-#         response = self.client.get(url_for('delete_student', name="Boris"), follow_redirects=True)
-#         self.assertEqual(response.status_code, 200)
+        response = self.client.get(url_for('delete_student', name="Boris"), follow_redirects=True)
+        self.assertEqual(response.status_code, 200)
+
 #deleting all students
     def test_delete_students(self):       
         response = self.client.get(url_for('clearall'), follow_redirects=True)
