@@ -27,17 +27,3 @@ class HouseAdd(FlaskForm):
     name = StringField("Subject Name", validators=[DataRequired()])
     submit = SubmitField('Add')
 
-
-'''above here______________________'''
-
-# class Houses(db.Model):
-#     __tablename__ = 'houses'
-#     id = db.Column(db.Integer, primary_key=True)
-#     house_name = db.Column(db.String(30), nullable=False)
-#     students = db.relationship('Students', backref='house_idbr')
-
-# class Staff(db.Model):
-#     __tablename__ = 'staff'
-#     id = db.Column(db.Integer, primary_key=True)
-#     staff_name = db.Column(db.String(30), nullable=False)
-#     house_id = db.Column(db.Integer, db.ForeignKey('houses.id'), nullable=False)

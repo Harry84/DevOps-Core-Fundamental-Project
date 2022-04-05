@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Hogwarts Student Intake</title>
-    </head>
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Hogwarts App</title>
+{% endblock %}
+    
+{% block content %}
     <body style="text-align: center">
-        <h1>Sorting Hat App</h1>
+        <h1>Enter Student Details</h1>
 	  <div class='form'>
             <form method='POST' action=''>
                 {{ form.hidden_tag() }}
@@ -12,7 +14,7 @@
                 <br>
                 {{ form.houseID.label }} {{ form.houseID}}
                 <br>
-		{{ form.submit }}   <span><a href="{{ url_for('addhouses') }}">Add a House</a></span>
+				{{ form.submit }}
             </form>
         </div>
 	<div class='students'>
@@ -29,5 +31,5 @@
 	</table>
 	</div>
     </body>
-</html>
+{% endblock %}
 
