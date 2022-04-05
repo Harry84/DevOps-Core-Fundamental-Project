@@ -7,7 +7,7 @@ from application.models import Students, Houses
 class TestBase(TestCase):
     def create_app(self):
  
-        app.config.update(SQLALCHEMY_DATABASE_URI='sqlite:///',
+        app.config.update(SQLALCHEMY_DATABASE_URI='sqlite:///test.db',
                 WTF_CSRF_ENABLED=False
                 )
         return app
