@@ -27,7 +27,7 @@ Signed up for drawio and did a basic sketch of the table relationships between s
 
 #### User Stories
 
-_Must Have:
+_Must Have:_
 
 Must meet MVP definition: a project that satisfies the minimum passing requirements of the assignment
 
@@ -66,7 +66,7 @@ displayed in one place. i.e. retrieve all records from the db and have the info 
 
 
 
-_Should Have:
+_Should Have:_
 
 * As a user I want to be able to enter the name of one student and see their details displayed
 alone.
@@ -78,7 +78,7 @@ alone.
 * As a teacher/admin I want to be able to amend or delete any student's records
 
 
-_Could have:
+_Could have:_
 
 Ages of students
 Last names of students
@@ -87,7 +87,7 @@ Some sort of sorting hat gif?
 Another table
 
 
-_Won't have:
+_Won't have:_
 
 A good looking front end
 Any CSS or JS
