@@ -35,26 +35,26 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 
 _Must Haves:_
 
-Must meet MVP definition: a project that satisfies the minimum passing requirements of the assignment
+Must meet MVP definition: a project that satisfies the minimum passing requirements of the assignment:
 
-As the examiner I want to see the following evidenced in the project in order that it may pass:
+* As the examiner I want to see the following evidenced in the project in order that it may pass:
 
 
-1. Kanban Board: Trello or an equivalent Kanban Board 
-2. At least 2 tables that share a relationship
-3. Database: GCP SQL Server or other Cloud Hosted managed Database
-4. CRUD functionality
-5. Programming language: Python
-6. Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
-7. Some analysis of what was tested and why - summary of overall results present
-8. Front-end: Flask (HTML)
-9. Version Control: Git
-10. CI Server: Jenkins - build server was installed and used to produce a build
-11. Tests meet integration test spec - test should be able to verify if the application can access the database
-12. Cloud server: GCP Compute Engine
-13. A structured README.md along with relevant content
-14. Tools and workflows discussed in the documentation are implemented throughout the project
-15. Simple Risk Analysis performed
+    1. Kanban Board: Trello or an equivalent Kanban Board 
+    2. At least 2 tables that share a relationship
+    3. Database: GCP SQL Server or other Cloud Hosted managed Database
+    4. CRUD functionality
+    5. Programming language: Python
+    6. Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
+    7. Some analysis of what was tested and why - summary of overall results present
+    8. Front-end: Flask (HTML)
+    9. Version Control: Git
+    10. CI Server: Jenkins - build server was installed and used to produce a build
+    11. Tests meet integration test spec - test should be able to verify if the application can access the database
+    12. Cloud server: GCP Compute Engine
+    13. A structured README.md along with relevant content
+    14. Tools and workflows discussed in the documentation are implemented throughout the project
+    15. Simple Risk Analysis performed
 
 
 * As a student I want to be able to input my name, year and house into a form such that
