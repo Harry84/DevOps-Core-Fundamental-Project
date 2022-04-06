@@ -140,7 +140,7 @@ CI Server: Jenkins - build server was installed and used to produce a build
 
 * The entry point or homepage is navigated to via the "/" url suffix or alternatively the /register url endpoint.  It provides a portal for new/existing students to register their attendance of a particular house.  The houses are accessible via a drop down menu and a user input box is available to accept a user's name.
 
-* Once users input their name and house choice they are able to submit via a button.  Their records then appear on the left hand side of the page along with any other students currently registered and their respective houses. 
+* Once users input their name and house choice they are able to submit via the "sort me non-random hat" button.  Their records then appear on the left hand side of the page along with any other students currently registered and their respective houses. 
 
 * I am using Bootstrap 3 for the Navbar.  The Navbar is coded into a base.html which can then be extended for the other pages via code blocks.
 
