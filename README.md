@@ -138,6 +138,15 @@ CI Server: Jenkins - build server was installed and used to produce a build
 
 ### Front-end: Flask (HTML)
 
+* The entry point or homepage is navigated to via the "/" url suffix or alternatively the /register url endpoint.  It provides a portal for new/existing students to register their attendance of a particular house.  The houses are accessible via a drop down menu and a user input box is available to accept a user's name.
+
+* Once users input their name and house choice they are able to submit via a button.  Their records then appear on the left hand side of the page along with any other students currently registered and their respective houses. 
+
+* I am using Bootstrap 3 for the Navbar.  The Navbar is coded into a base.html which can then be extended for the other pages.
+
+* There are various links in the Navbar.  The title and register option bring the user back to the homepage.  The Add Houses link allows a user to enter a new house choice into the db which then becomes accessible in the drop down menu on the homepage.
+
+
 ### Version Control: Git
 
 I plan to use git branching to develop different features for my app.  Once I have a basic functionality working (app-setup) I will branch off when trying to tackle more complex features such as the update functionality via HTML.  THis should be evidenced via my commit history.
