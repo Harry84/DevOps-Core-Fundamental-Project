@@ -39,9 +39,13 @@ Must meet MVP definition: a project that satisfies the minimum passing requireme
 
 As the examiner I want to see the following evidenced in the project in order that it may pass:
 
+* Kanban Board: Trello or an equivalent Kanban Board 
 * At least 2 tables that share a relationship
+
+The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house.id within the Student table to the Houses table.  Each student record has a house id corresponding to the id of that student's house.  House id is the primary key in the Houses table and the foreign key in the Students table.  Each house can have many students, therefore the line branches where it connects to the Houses table.  Each student can only have one house, denoted by the single branch connecting the line to the Student table.
+
 * CRUD functionality
-* Kanban Board: Trello or an equivalent Kanban Board
+* 
 * Database: GCP SQL Server or other Cloud Hosted managed Database
 * Programming language: Python
 * Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
@@ -99,12 +103,7 @@ Any CSS or JS
 Buttons/interactivity for the user
 login system
 
-## ERD:
 
-
-
-### Day 2
-Researched further re: MoSCoW and refined my user stories and the MVP requirements of the task such that they were aligned with the must haves.  
 
 
 
