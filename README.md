@@ -22,7 +22,7 @@ of my Trello board which I will include in this repo, along with any accompanyin
 I set up a new VM on GCP and this GitHub repo.  Installed Jenkins on my VM.  Cloned this repo down.  Got a very basic app running with CRUD functionality based on a previous exercise.
 Signed up for Trello - wrote day 1 Agile Sprint Board - took a screenshot.
 
-![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/Hogwarts%20Houses%20ERD.drawio.png)
+![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/Trello%20Board%20Day1.JPG)
 
 Decided to simplify my project to something that was one to many - came up with this Harry Potter Houses idea.
 Devised user stories.
