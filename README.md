@@ -18,12 +18,12 @@ turnaround time of the project I will view each day as its own sprint and try to
 updating the backlog, sprint backlog and completed sprint at the end of each day.
 
 ### Day 1
-#. Decided to use Trello from the get go to help with planning and prioritisation.  Each day is treated as a sprint with its own backlog.  At the end of the day I move the completed task cards over to the completed sprint section of the board on the right hand side (see image below).
+* Decided to use Trello from the get go to help with planning and prioritisation.  Each day is treated as a sprint with its own backlog.  At the end of the day I move the completed task cards over to the completed sprint section of the board on the right hand side (see image below).
 
 ![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/Trello%20Board%20Day1.JPG)
 
 
-#. This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello Board.
+* This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello Board.
 * Decided to simplify my project to something that was one to many - came up with this Harry Potter Houses idea.
 * Signed up for drawio and did a basic sketch of the table relationships between students, houses and years (should I have time to include student year) - aka Entity Relationship Diagram (see below):
 
@@ -39,16 +39,16 @@ Must meet MVP definition: a project that satisfies the minimum passing requireme
 
 As the examiner I want to see the following evidenced in the project in order that it may pass:
 
-* Kanban Board: Trello or an equivalent Kanban Board 
-* At least 2 tables that share a relationship
+#. Kanban Board: Trello or an equivalent Kanban Board 
+#. At least 2 tables that share a relationship
 
 The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.
 
-* Database: GCP SQL Server or other Cloud Hosted managed Database
+#. Database: GCP SQL Server or other Cloud Hosted managed Database
 
 I have instatiated both an SQL server and a virtual machine on the GCP.  I am connecting to my database schema via Workbench.
 
-* CRUD functionality
+#. CRUD functionality
 
 Create: Using Flask and SQLAlchemy, I instantiate a db object using:
 
