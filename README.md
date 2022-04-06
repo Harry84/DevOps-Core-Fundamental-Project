@@ -42,11 +42,39 @@ As the examiner I want to see the following evidenced in the project in order th
 * Kanban Board: Trello or an equivalent Kanban Board 
 * At least 2 tables that share a relationship
 
-The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.  
+The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.
+
+* Database: GCP SQL Server or other Cloud Hosted managed Database
+I have instatiated both an SQL server and a virtual machine on the GCP.  I am connecting to my database schema via Workbench.
 
 * CRUD functionality
-* 
-* Database: GCP SQL Server or other Cloud Hosted managed Database
+Using Flask and SQLAlchemy, I instantiate a db object using:
+
+db = SQLAlchemy(app) in the init file.
+
+I define the classes I want to use in models.py.  Each class has attributes which form the columns of the db:
+
+class Students(db.Model):
+    __tablename__ = 'students'
+    id = db.Column(db.Integer, primary_key=True)
+    student_name = db.Column(db.String(30), nullable=False)
+
+New entities are then instantiated in python via providing arguments to these classes:
+
+new_student = Students(student_name="Eric")
+
+These are only currently objects in Python.  In order to add them to the database:
+
+db.session.add(new_game)            - stages to the db
+db.session.commit()                 - inserts into students table
+
+
+
+
+
+Create, Read, Update, Delete.
+
+
 * Programming language: Python
 * Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
 * Some analysis of what was tested and why - summary of overall results present
