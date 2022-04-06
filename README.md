@@ -48,7 +48,7 @@ The two tables are Students and Houses - they share a one to many relationship i
 
 I have instatiated both an SQL server and a virtual machine on the GCP.  I am connecting to my database schema via Workbench.
 
-* **CRUD functionality **
+* CRUD functionality
 
 Create: Using Flask and SQLAlchemy, I instantiate a db object using:
 
@@ -72,11 +72,32 @@ db.session.commit()                 - inserts into students table
 
 Read:
 
-Update, Delete.
+To read the database we query it (routes.py line 27):
+
+allhouses = db.session.query(Houses).all()
+
+Update:
+
+Updating existing entries (routes.py line 67):
+
+first_student = Students.query.first()
+first_student.student_name = name
+db.session.commit()
+
+Delete:
+
+Deleting entries (routes.py line 38):
+
+def delete_student(name):
+    student_to_delete = db.session.query(Students).filter_by(student_name=name).first()
+    if student_to_delete:
+        db.session.delete(student_to_delete)
+        db.session.commit()
 
 
 * Programming language: Python
 * Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
+
 * Some analysis of what was tested and why - summary of overall results present
 * Front-end: Flask (HTML)
 * Version Control: Git
