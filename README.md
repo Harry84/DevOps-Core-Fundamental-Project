@@ -33,51 +33,49 @@ Must meet MVP definition: a project that satisfies the minimum passing requireme
 
 As the examiner I want to see the following evidenced in the project in order that it may pass:
 
-At least 2 tables that share a relationship
-CRUD functionality
-Kanban Board: Trello or an equivalent Kanban Board
-Database: GCP SQL Server or other Cloud Hosted managed Database
-Programming language: Python
-Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
-Some analysis of what was tested and why - summary of overall results present
-Front-end: Flask (HTML)
-Version Control: Git
-CI Server: Jenkins - build server was installed and used to produce a build
-Tests meet integration test spec - test should be able to verify if the application can access the database
-Cloud server: GCP Compute Engine
-A structured README.md along with relevant content
-Tools and workflows discussed in the documentation are implemented throughout the project
-Simple Risk Analysis performed
+* At least 2 tables that share a relationship
+* CRUD functionality
+* Kanban Board: Trello or an equivalent Kanban Board
+* Database: GCP SQL Server or other Cloud Hosted managed Database
+* Programming language: Python
+* Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
+* Some analysis of what was tested and why - summary of overall results present
+* Front-end: Flask (HTML)
+* Version Control: Git
+* CI Server: Jenkins - build server was installed and used to produce a build
+* Tests meet integration test spec - test should be able to verify if the application can access the database
+* Cloud server: GCP Compute Engine
+* A structured README.md along with relevant content
+* Tools and workflows discussed in the documentation are implemented throughout the project
+* Simple Risk Analysis performed
 
-As a student I want to be able to input my name, year and house into a form such that
+* As a student I want to be able to input my name, year and house into a form such that
 it is stored on a database and I can access it at a later date.  i.e. create a student record
 
-As a user/student/teacher I want to be able to enter multiple students into the database for the
+* As a user/student/teacher I want to be able to enter multiple students into the database for the
 same reason. i.e. create multiple records which are appended.
 
-As a user I want to be able to see all the students and their corresponding houses and years
+* As a user I want to be able to see all the students and their corresponding houses and years
 displayed in one place. i.e. retrieve all records from the db and have the info displayed on a webpage
 
-As a user I want to be able to update a student record
+* As a user I want to be able to update a student record
 
-As a user I want to be able to delete a student record
+* As a user I want to be able to delete a student record
 
-As the examiner I would like to:
-
-test that most or all of the above CRUD functionality is possible via automated tests
+* As the examiner I would like to test that most or all of the above CRUD functionality is possible via automated tests
 
 
 
 Should Have:
 
-As a user I want to be able to enter the name of one student and see their details displayed
+* As a user I want to be able to enter the name of one student and see their details displayed
 alone.
 
-As a teacher I want to be able to update the name or house for any particular student
+* As a teacher I want to be able to update the name or house for any particular student
 
-As a student I want to know other students can't amend or delete my personal records
+* As a student I want to know other students can't amend or delete my personal records
 
-As a teacher/admin I want to be able to amend or delete any student's records
+* As a teacher/admin I want to be able to amend or delete any student's records
 
 
 Could have:
