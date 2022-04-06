@@ -108,7 +108,7 @@ The two tables are Students and Houses - they share a one to many relationship i
 
 ### Database
 
-I have instatiated both an SQL server and a virtual machine on the GCP.  I am connecting to my database schema via Workbench.
+I have instatiated an SQL server on the GCP.  I am connecting to my database schema via Workbench.
 
 ### CRUD Functionality
 
