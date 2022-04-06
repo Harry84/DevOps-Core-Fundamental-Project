@@ -39,16 +39,16 @@ Must meet MVP definition: a project that satisfies the minimum passing requireme
 
 As the examiner I want to see the following evidenced in the project in order that it may pass:
 
-#. Kanban Board: Trello or an equivalent Kanban Board 
-#. At least 2 tables that share a relationship
+1. Kanban Board: Trello or an equivalent Kanban Board 
+2. At least 2 tables that share a relationship
 
 The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.
 
-#. Database: GCP SQL Server or other Cloud Hosted managed Database
+3. Database: GCP SQL Server or other Cloud Hosted managed Database
 
 I have instatiated both an SQL server and a virtual machine on the GCP.  I am connecting to my database schema via Workbench.
 
-#. CRUD functionality
+4. CRUD functionality
 
 Create: Using Flask and SQLAlchemy, I instantiate a db object using:
 
@@ -95,18 +95,18 @@ def delete_student(name):
         db.session.commit()
 
 
-* Programming language: Python
-* Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
+5. Programming language: Python
+6. Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
 
-* Some analysis of what was tested and why - summary of overall results present
-* Front-end: Flask (HTML)
-* Version Control: Git
-* CI Server: Jenkins - build server was installed and used to produce a build
-* Tests meet integration test spec - test should be able to verify if the application can access the database
-* Cloud server: GCP Compute Engine
-* A structured README.md along with relevant content
-* Tools and workflows discussed in the documentation are implemented throughout the project
-* Simple Risk Analysis performed
+7. Some analysis of what was tested and why - summary of overall results present
+8. Front-end: Flask (HTML)
+9. Version Control: Git
+10. CI Server: Jenkins - build server was installed and used to produce a build
+11. Tests meet integration test spec - test should be able to verify if the application can access the database
+12. Cloud server: GCP Compute Engine
+13. A structured README.md along with relevant content
+14. Tools and workflows discussed in the documentation are implemented throughout the project
+15. Simple Risk Analysis performed
 
 * As a student I want to be able to input my name, year and house into a form such that
 it is stored on a database and I can access it at a later date.  i.e. create a student record
