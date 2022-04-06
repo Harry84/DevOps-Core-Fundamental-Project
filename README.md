@@ -115,7 +115,7 @@ Using Flask and SQLAlchemy, I instantiate a db object using:
 
 db = SQLAlchemy(app) in the init file.
 
-I define the classes I want to use in models.py.  Each class has attributes which form the columns of the db.  New entities are then instantiated in python via providing arguments to these classes.  These are only currently objects in Python.  In order to add them to the database I add and commit them. Please see routes.py for examples of the following:
+I define the classes I want to use in models.py.  Each class has attributes which in turn form the columns of the db.  New entities are then instantiated in python via providing arguments to these classes.  These are only currently objects in Python.  In order to add them to the database I add and commit them. Please see routes.py for examples of the following:
 
 * Create:
     Students and Houses are created
