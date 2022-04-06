@@ -42,7 +42,7 @@ As the examiner I want to see the following evidenced in the project in order th
 * Kanban Board: Trello or an equivalent Kanban Board 
 * At least 2 tables that share a relationship
 
-The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house.id within the Student table to house.id in the Houses table.  Each student record has a house id corresponding to the id of that student's house.  House id is the primary key in the Houses table and the foreign key in the Students table.  Each house can have many students, therefore the line branches where it connects to the Houses table.  Each student can only have one house, denoted by the single branch connecting the line to the Student table.
+The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  Each house can have many students, therefore the line branches where it connects to the Houses table.  Each student can only have one house, denoted by the single branch connecting the line to the Student table.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.  Each student record has a house id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.  
 
 * CRUD functionality
 * 
