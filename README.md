@@ -46,7 +46,6 @@ As the examiner I want to see the following evidenced in the project in order th
 4. CRUD functionality
 5. Programming language: Python
 6. Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
-
 7. Some analysis of what was tested and why - summary of overall results present
 8. Front-end: Flask (HTML)
 9. Version Control: Git
@@ -127,7 +126,23 @@ I define the classes I want to use in models.py.  Each class has attributes whic
 * Delete:
     Student entries are deleted (routes.py line 38)
     
-### Risk Asessment
+### Risk Analysis
+
+### Unit Testing
+
+### Analysis 
+what was tested and why - summary of overall results present
+
+### Automation
+CI Server: Jenkins - build server was installed and used to produce a build
+
+### Front-end: Flask (HTML)
+
+### Version Control: Git
+
+### Possible Future Development
+
+
 
 
 
