@@ -41,60 +41,8 @@ As the examiner I want to see the following evidenced in the project in order th
 
 1. Kanban Board: Trello or an equivalent Kanban Board 
 2. At least 2 tables that share a relationship
-
-The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.
-
 3. Database: GCP SQL Server or other Cloud Hosted managed Database
-
-I have instatiated both an SQL server and a virtual machine on the GCP.  I am connecting to my database schema via Workbench.
-
 4. CRUD functionality
-
-Create: Using Flask and SQLAlchemy, I instantiate a db object using:
-
-db = SQLAlchemy(app) in the init file.
-
-I define the classes I want to use in models.py.  Each class has attributes which form the columns of the db:
-
-class Students(db.Model):
-    __tablename__ = 'students'
-    id = db.Column(db.Integer, primary_key=True)
-    student_name = db.Column(db.String(30), nullable=False)
-
-New entities are then instantiated in python via providing arguments to these classes:
-
-new_student = Students(student_name="Eric")
-
-These are only currently objects in Python.  In order to add them to the database:
-
-db.session.add(new_game)            - stages to the db
-db.session.commit()                 - inserts into students table
-
-Read:
-
-To read the database we query it (routes.py line 27):
-
-allhouses = db.session.query(Houses).all()
-
-Update:
-
-Updating existing entries (routes.py line 67):
-
-first_student = Students.query.first()
-first_student.student_name = name
-db.session.commit()
-
-Delete:
-
-Deleting entries (routes.py line 38):
-
-def delete_student(name):
-    student_to_delete = db.session.query(Students).filter_by(student_name=name).first()
-    if student_to_delete:
-        db.session.delete(student_to_delete)
-        db.session.commit()
-
-
 5. Programming language: Python
 6. Unit Testing with Python (Pytest) - test coverage includes most import areas - basic functions tested
 
@@ -151,6 +99,62 @@ A good looking front end
 Any CSS or JS
 Buttons/interactivity for the user
 login system
+
+### Table relationship
+
+The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.
+
+### Database
+
+I have instatiated both an SQL server and a virtual machine on the GCP.  I am connecting to my database schema via Workbench.
+
+### CRUD Functionality
+
+Create: Using Flask and SQLAlchemy, I instantiate a db object using:
+
+db = SQLAlchemy(app) in the init file.
+
+I define the classes I want to use in models.py.  Each class has attributes which form the columns of the db:
+
+class Students(db.Model):
+    __tablename__ = 'students'
+    id = db.Column(db.Integer, primary_key=True)
+    student_name = db.Column(db.String(30), nullable=False)
+
+New entities are then instantiated in python via providing arguments to these classes:
+
+new_student = Students(student_name="Eric")
+
+These are only currently objects in Python.  In order to add them to the database:
+
+db.session.add(new_game)            - stages to the db
+db.session.commit()                 - inserts into students table
+
+Read:
+
+To read the database we query it (routes.py line 27):
+
+allhouses = db.session.query(Houses).all()
+
+Update:
+
+Updating existing entries (routes.py line 67):
+
+first_student = Students.query.first()
+first_student.student_name = name
+db.session.commit()
+
+Delete:
+
+Deleting entries (routes.py line 38):
+
+def delete_student(name):
+    student_to_delete = db.session.query(Students).filter_by(student_name=name).first()
+    if student_to_delete:
+        db.session.delete(student_to_delete)
+        db.session.commit()
+
+
 
 
 
