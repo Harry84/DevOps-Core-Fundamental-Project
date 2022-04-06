@@ -142,7 +142,7 @@ CI Server: Jenkins - build server was installed and used to produce a build
 
 * Once users input their name and house choice they are able to submit via a button.  Their records then appear on the left hand side of the page along with any other students currently registered and their respective houses. 
 
-* I am using Bootstrap 3 for the Navbar.  The Navbar is coded into a base.html which can then be extended for the other pages.
+* I am using Bootstrap 3 for the Navbar.  The Navbar is coded into a base.html which can then be extended for the other pages via code blocks.
 
 * There are various links in the Navbar.  The title and register option bring the user back to the homepage.  The Add Houses link allows a user to enter a new house choice into the db which then becomes accessible in the drop down menu on the homepage.
 
