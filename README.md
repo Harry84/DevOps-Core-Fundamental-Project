@@ -45,10 +45,12 @@ As the examiner I want to see the following evidenced in the project in order th
 The two tables are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.
 
 * Database: GCP SQL Server or other Cloud Hosted managed Database
+
 I have instatiated both an SQL server and a virtual machine on the GCP.  I am connecting to my database schema via Workbench.
 
-* CRUD functionality
-Using Flask and SQLAlchemy, I instantiate a db object using:
+* **CRUD functionality **
+
+Create: Using Flask and SQLAlchemy, I instantiate a db object using:
 
 db = SQLAlchemy(app) in the init file.
 
@@ -68,11 +70,9 @@ These are only currently objects in Python.  In order to add them to the databas
 db.session.add(new_game)            - stages to the db
 db.session.commit()                 - inserts into students table
 
+Read:
 
-
-
-
-Create, Read, Update, Delete.
+Update, Delete.
 
 
 * Programming language: Python
