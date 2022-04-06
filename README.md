@@ -110,49 +110,20 @@ I have instatiated both an SQL server and a virtual machine on the GCP.  I am co
 
 ### CRUD Functionality
 
-Create: Using Flask and SQLAlchemy, I instantiate a db object using:
+Using Flask and SQLAlchemy, I instantiate a db object using:
 
 db = SQLAlchemy(app) in the init file.
 
-I define the classes I want to use in models.py.  Each class has attributes which form the columns of the db:
+I define the classes I want to use in models.py.  Each class has attributes which form the columns of the db.  New entities are then instantiated in python via providing arguments to these classes.  These are only currently objects in Python.  In order to add them to the database I add and commit them. Please see routes.py for examples of the following:
 
-class Students(db.Model):
-    __tablename__ = 'students'
-    id = db.Column(db.Integer, primary_key=True)
-    student_name = db.Column(db.String(30), nullable=False)
-
-New entities are then instantiated in python via providing arguments to these classes:
-
-new_student = Students(student_name="Eric")
-
-These are only currently objects in Python.  In order to add them to the database:
-
-db.session.add(new_game)            - stages to the db
-db.session.commit()                 - inserts into students table
-
-Read:
-
-To read the database we query it (routes.py line 27):
-
-allhouses = db.session.query(Houses).all()
-
-Update:
-
-Updating existing entries (routes.py line 67):
-
-first_student = Students.query.first()
-first_student.student_name = name
-db.session.commit()
-
-Delete:
-
-Deleting entries (routes.py line 38):
-
-def delete_student(name):
-    student_to_delete = db.session.query(Students).filter_by(student_name=name).first()
-    if student_to_delete:
-        db.session.delete(student_to_delete)
-        db.session.commit()
+* Create:
+    Students and Houses are created
+* Read:
+    Student and house table entries are read
+* Update:
+    Student entries are updated (routes.py line 67)
+* Delete:
+    Student entries are deleted (routes.py line 38)
 
 
 
