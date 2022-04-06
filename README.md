@@ -140,9 +140,13 @@ CI Server: Jenkins - build server was installed and used to produce a build
 
 ### Version Control: Git
 
+I plan to use git branching to develop different features for my app.  Once I have a basic functionality working (app-setup) I will branch off when trying to tackle more complex features such as the update functionality via HTML.  THis should be evidenced via my commit history.
+
 ### Possible Future Development
 
 ### Acknowledgements
+
+Thanks especially to Earl Gray for his expert tutelage and sticking with us!  A special note also to Leon Robison for providing assistance when it was much needed.  Also to the rest of my cohort for their continued support and guidanc :)
 
 
 
