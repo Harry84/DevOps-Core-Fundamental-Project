@@ -6,7 +6,7 @@
     
 {% block content %}
     <body style="text-align: center">
-        <h1>Enter Student Details</h1>
+        <h3>Enter Student Details</h3>
 	  <div class='form'>
             <form method='POST' action=''>
                 {{ form.hidden_tag() }}
@@ -18,10 +18,14 @@
             </form>
         </div>
 	<div class='students'>
+
+
+
+	<h3 style="text-align:left"><b>Hogwarts Students</b></h3>
 	<table>
 		<tr>
-			<th>Name</th>
-			<th>House</th>
+			<th width="55%">Name</th>
+			<th width="65%">House</th>
 		</tr>
 	{% for students in studentss %}
 	<tr>
