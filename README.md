@@ -87,19 +87,19 @@ alone.
 
 _Could have:_
 
-Ages of students
-Last names of students
-Sorting hat option for random house assignment
-Some sort of sorting hat gif?
-Another table
+* Ages of students
+* Last names of students
+* Sorting hat option for random house assignment
+* Some sort of sorting hat gif?
+* Another table - many to many
 
 
 _Won't have:_
 
-A good looking front end
-Any CSS or JS
-Buttons/interactivity for the user
-login system
+* A good looking front end
+* Much CSS or JS
+* Much interactivity for a user
+* A login system
 
 ### Table relationship
 
