@@ -23,10 +23,7 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 ![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/Trello%20Board%20Day1.JPG)
 
 
-* set up a new VM on GCP and this GitHub repo.  
-* Installed Jenkins on my VM.  
-* Cloned this repo down.  
-* Got a very basic app running with CRUD functionality based on a previous exercise.
+* This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello Board.
 * Decided to simplify my project to something that was one to many - came up with this Harry Potter Houses idea.
 * Signed up for drawio and did a basic sketch of the table relationships between students, houses and years (should I have time to include student year) - aka Entity Relationship Diagram (see below):
 
