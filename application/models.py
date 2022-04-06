@@ -21,9 +21,13 @@ class Students(db.Model):
 class EnrolForm(FlaskForm):
     name = StringField("Name", validators=[DataRequired()])
     houseID = SelectField("houses", choices = [])
-    submit = SubmitField('Sort me oh Hat!')
+    submit = SubmitField('Sort me non-random Hat!')
 
 class HouseAdd(FlaskForm):
-    name = StringField("Subject Name", validators=[DataRequired()])
+    name = StringField("House Name", validators=[DataRequired()])
+    submit = SubmitField('Add')
+
+class AmendStudent(FlaskForm):
+    name = StringField("Name", validators=[DataRequired()])
     submit = SubmitField('Add')
 

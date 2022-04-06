@@ -1,7 +1,7 @@
 from application import app, db
 from application.models import Houses, Students
 from flask import render_template, redirect, url_for, request
-from application.models import EnrolForm, HouseAdd
+from application.models import EnrolForm, HouseAdd, AmendStudent
 import pdb
 
 @app.route('/', methods = ['GET', 'POST'])
@@ -68,4 +68,17 @@ def update(name):
     first_student.student_name = name
     db.session.commit()
     return redirect(url_for('register'))
+
+@app.route('/amend_student/<prev>', methods=['GET', 'POST'])
+def amend(prev):
+    form = AmendStudent()
+    students = Students.query.join(Houses).all()
+    allhouses = db.session.query(Houses).all()
+    if request.method == 'POST':
+        amended_student = db.session.query(Students).filter_by(student_name=prev).first()
+        amended_student.student_name = request.form.get('name')
+        db.session.commit()
+        return redirect(url_for('register'))
+    else:
+        return render_template('amend_student.html', form=form, amended_student=amended_student)
     
