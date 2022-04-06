@@ -15,14 +15,18 @@ years.
 I aim to use an agile approach in carrying out this project.  I will interpret user stories corresponding to my understanding of the MVP
 and how it applies here.  On a daily basis, I will then set tasks to enable these user stories.  Given the short 
 turnaround time of the project I will view each day as its own sprint and try to allocate tasks to my Trello board in the morning, as well 
-updating the backlog, sprint backlog and completed sprint at the end of each day.  I will demonstrate I am doing this via numbered screenshots 
-of my Trello board which I will include in this repo, along with any accompanying documents which I will include links to below.
+updating the backlog, sprint backlog and completed sprint at the end of each day.
 
 ### Day 1
+Decided to use Trello from the get go to help with planning and prioritisation.  Each day is treated as a sprint with its own backlog.  At the end of the day I move the completed task cards over to the completed sprint section of the board on the right hand side (see image below).
+
+![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/Trello%20Board%20Day1.JPG)
+
+
 I set up a new VM on GCP and this GitHub repo.  Installed Jenkins on my VM.  Cloned this repo down.  Got a very basic app running with CRUD functionality based on a previous exercise.
 Signed up for Trello - wrote day 1 Agile Sprint Board - took a screenshot.
 
-![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/Trello%20Board%20Day1.JPG)
+
 
 Decided to simplify my project to something that was one to many - came up with this Harry Potter Houses idea.
 Devised user stories.
