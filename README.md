@@ -153,6 +153,12 @@ I plan to use git branching to develop different features for my app.  Once I ha
 
 ### Possible Future Development
 
+* It would be ideal to add a login system and levels of permission for various aspects of functionality.  Students shouldn't be able to delete records for example. 
+ 
+* I would also like to add a random sorting hat option or even a short questionnaire type form which would then assign users based on their answers.  More info could be added such as student owl names, photos, classes. 
+
+* Essentially a yearbook with an academic twist.  It could be a learning portal for Harry Potter enthusiasts.
+
 ### Acknowledgements
 
 Thanks especially to Earl Gray for his expert tutelage and sticking with us!  A special note also to Leon Robison for providing assistance when it was much needed.  Also to the rest of my cohort for their continued support and guidanc :)
