@@ -39,6 +39,7 @@ Must meet MVP definition: a project that satisfies the minimum passing requireme
 
 As the examiner I want to see the following evidenced in the project in order that it may pass:
 
+
 1. Kanban Board: Trello or an equivalent Kanban Board 
 2. At least 2 tables that share a relationship
 3. Database: GCP SQL Server or other Cloud Hosted managed Database
@@ -55,6 +56,7 @@ As the examiner I want to see the following evidenced in the project in order th
 13. A structured README.md along with relevant content
 14. Tools and workflows discussed in the documentation are implemented throughout the project
 15. Simple Risk Analysis performed
+
 
 * As a student I want to be able to input my name, year and house into a form such that
 it is stored on a database and I can access it at a later date.  i.e. create a student record
