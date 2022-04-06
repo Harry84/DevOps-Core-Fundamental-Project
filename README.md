@@ -31,7 +31,7 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 
 * Devised user stories - I decided to consider the examiner user story as a key one - after all the purpose of this project is to assess our progress and to be a quality gate therefore that is the most important user story - a collection of must haves!  This isn't intended at this stage to be an app that is used widely.
 
-#### User Stories
+### User Stories
 
 _Must Haves:_
 
