@@ -12,6 +12,9 @@ class Houses(db.Model):
     house_name = db.Column(db.String(30), nullable=False)
     students = db.relationship('Students', backref='house_idbr')
 
+    def __repr__(self):
+        return 'Choose {}'.format(self.house_name)
+
 class Students(db.Model):
     __tablename__ = 'students'
     id = db.Column(db.Integer, primary_key=True)
@@ -26,6 +29,10 @@ class EnrolForm(FlaskForm):
 class HouseAdd(FlaskForm):
     name = StringField("House Name", validators=[DataRequired()])
     submit = SubmitField('Add')
+
+class HouseRemove(FlaskForm):
+    name = StringField("House Name", validators=[DataRequired()])
+    submit = SubmitField('Remove')
 
 class AmendStudent(FlaskForm):
     name = StringField("Name", validators=[DataRequired()])

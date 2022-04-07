@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>List of Students</title>
+{% endblock %}
+
+{% block content %}
+<h3 style="text-align:left"><b>Hogwarts Students</b></h3>
+
+<div class="students">
+    {% for students in studentss %}
+	{{students.student_name}}  {{students.house_idbr.house_name}}  <a href="{{ url_for('delete_student', name=students.student_name) }}"><button type="button">remove student</button></a></p><br>
+	
+	{% endfor %}
+</div>
+
+
+<div>
+
+
+    <a href="{{ url_for('clearall') }}"><button type="button">clear all</button></a></p><br>
+    
+
+</div>
+{% endblock %}
+

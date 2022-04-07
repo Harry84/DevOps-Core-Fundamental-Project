@@ -1,7 +1,7 @@
 from application import app, db
 from application.models import Houses, Students
 from flask import render_template, redirect, url_for, request
-from application.models import EnrolForm, HouseAdd, AmendStudent
+from application.models import EnrolForm, HouseAdd, HouseRemove, AmendStudent
 import pdb
 
 @app.route('/', methods = ['GET', 'POST'])
@@ -40,7 +40,7 @@ def delete_student(name):
     if student_to_delete:
         db.session.delete(student_to_delete)
         db.session.commit()
-        return redirect(url_for('register'))
+        return redirect(url_for('liststudents'))
     else:
         return redirect(url_for('register'))
 
@@ -69,16 +69,49 @@ def update(name):
     db.session.commit()
     return redirect(url_for('register'))
 
-@app.route('/amend_student/<prev>', methods=['GET', 'POST'])
-def amend(prev):
-    form = AmendStudent()
-    students = Students.query.join(Houses).all()
+'''__________________below not working yet___________________________________________'''
+
+# @app.route('/amend_student/<prev>', methods=['GET', 'POST'])
+# def amend(prev):
+#     form = AmendStudent()
+#     students = Students.query.join(Houses).all()
+#     allhouses = db.session.query(Houses).all()
+#     if request.method == 'POST':
+#         amended_student = db.session.query(Students).filter_by(student_name=prev).first()
+#         amended_student.student_name = request.form.get('name')
+#         db.session.commit()
+#         return redirect(url_for('register'))
+#     else:
+#         return render_template('amend_student.html', form=form, amended_student=amended_student)
+
+#making a list of houses to populate a page - house_list.html
+
+@app.route('/studentlist', methods = ['GET','POST'])
+def liststudents():
     allhouses = db.session.query(Houses).all()
-    if request.method == 'POST':
-        amended_student = db.session.query(Students).filter_by(student_name=prev).first()
-        amended_student.student_name = request.form.get('name')
+    students = Students.query.join(Houses).all()
+    return render_template('studentlist.html', studentss=students)
+
+#trying to make a route to delete a house by supplying name to a form or clicking a button on houselist.html - need to specify not to delete houses with existing students
+@app.route('/delhouse/<name>',  methods = ['GET', 'DELETE'])
+def delhouse(name):
+    house_to_delete = db.session.query(Houses).filter_by(house_name=name).first()
+    print(str(house_to_delete))
+    if house_to_delete == "Gryfinndor" or house_to_delete == "Slytherin" or house_to_delete == "Hufflepuff" or house_to_delete == "Ravenclaw":
+        return redirect(url_for('listhouses'))
+    elif house_to_delete:
+        db.session.delete(house_to_delete)
         db.session.commit()
-        return redirect(url_for('register'))
+        return redirect(url_for('listhouses'))
     else:
-        return render_template('amend_student.html', form=form, amended_student=amended_student)
+        return redirect(url_for('register'))
+
+@app.route('/houselist', methods = ['GET','POST'])
+def listhouses():
+    allhouses = db.session.query(Houses).all()
+    return render_template('houselist.html', allhouses=allhouses)
+
+
+    
+
     
