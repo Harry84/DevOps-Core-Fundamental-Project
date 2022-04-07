@@ -69,8 +69,6 @@ def update(name):
     db.session.commit()
     return redirect(url_for('register'))
 
-'''__________________below not working yet___________________________________________'''
-
 @app.route('/amend_student/<prev>', methods=['GET', 'POST'])
 def amend_student(prev):
     form = EnrolForm()
