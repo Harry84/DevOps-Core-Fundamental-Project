@@ -71,18 +71,31 @@ def update(name):
 
 '''__________________below not working yet___________________________________________'''
 
-# @app.route('/amend_student/<prev>', methods=['GET', 'POST'])
-# def amend(prev):
-#     form = AmendStudent()
-#     students = Students.query.join(Houses).all()
-#     allhouses = db.session.query(Houses).all()
-#     if request.method == 'POST':
-#         amended_student = db.session.query(Students).filter_by(student_name=prev).first()
-#         amended_student.student_name = request.form.get('name')
-#         db.session.commit()
-#         return redirect(url_for('register'))
-#     else:
-#         return render_template('amend_student.html', form=form, amended_student=amended_student)
+@app.route('/amend_student/<prev>', methods=['GET', 'POST'])
+def amend_student(prev):
+    form = EnrolForm()
+    allhouses = db.session.query(Houses).all()
+    for i in allhouses:
+        form.houseID.choices.append((i.id,i.house_name))
+
+    amended_student = db.session.query(Students).filter_by(student_name=prev).first()
+    if request.method == 'POST':
+        if amended_student:
+            amended_student.student_name = form.name.data
+            amended_student.house_id = form.houseID.data
+            db.session.commit()
+            return redirect(url_for('register'))
+    else:
+        return render_template('edit_student.html', form=form, allhouses=allhouses)
+
+#making a page to edit students from
+
+@app.route('/edit_student', methods = ['GET','POST'])
+def edit_student():
+    form = EnrolForm()
+    allhouses = db.session.query(Houses).all()
+    students = Students.query.join(Houses).all()
+    return render_template('edit_student.html', form=form, studentss=students)
 
 #making a list of houses to populate a page - house_list.html
 

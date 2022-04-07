@@ -36,5 +36,6 @@ class HouseRemove(FlaskForm):
 
 class AmendStudent(FlaskForm):
     name = StringField("Name", validators=[DataRequired()])
+    houseID = SelectField("houses", choices = [])
     submit = SubmitField('Add')
 
