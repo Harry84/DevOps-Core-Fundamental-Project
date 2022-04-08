@@ -127,8 +127,6 @@ class TestUpdate(TestBase):
         self.assertIn(b'Marie', response.data)
         self.assertNotIn(b'Jessica', response.data)
 
-#not working below - do I need to hardcode form somehow for student info to then be updated and to test that's happened?
-
     def test_amend_student(self):
         response = self.client.post(url_for('amend_student', prev="Jessica"),
         data = {"name": "Marie", "houseID": 1},
@@ -154,6 +152,17 @@ class TestData(TestBase):
         response = self.client.get(url_for('listhouses'))
         assert "red" in response.data.decode()
         assert "yellow" in response.data.decode()
+
+    def test_addhouses_get(self):
+        response = self.client.get(url_for('addhouses'))
+        assert "add" in response.data.decode()
+
+    def test_amend_student_get(self):
+        response = self.client.post(url_for('amend_student', prev="Jessica"),
+        data = {"name": "Marie", "houseID": 1},
+        follow_redirects=True)
+        assert "Hogwarts" in response.data.decode()
+
 
 #decode makes the page a string
         
