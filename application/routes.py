@@ -95,7 +95,7 @@ def edit_student():
     students = Students.query.join(Houses).all()
     return render_template('edit_student.html', form=form, studentss=students)
 
-#making a list of houses to populate a page - house_list.html
+#making a list of students to populate a page
 
 @app.route('/studentlist', methods = ['GET','POST'])
 def liststudents():
