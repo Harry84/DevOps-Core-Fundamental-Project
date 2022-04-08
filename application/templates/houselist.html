@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>List of Houses</title>
+{% endblock %}
+
+{% block content %}
+<h3 style="text-align:left"><b>Hogwarts Houses</b></h3>
+
+<div class="houses">
+    {% for hous in allhouses %}
+	{{hous.house_name}} <a href="{{ url_for('delhouse', name=hous.house_name) }}"><button type="button">remove House</button></a></p><br>
+	
+	{% endfor %}
+</div>
+
+
+<div>
+
+
+    <a href="{{ url_for('clearall') }}"><button type="button">clear all</button></a></p><br>
+    
+
+</div>
+{% endblock %}

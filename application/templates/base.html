@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    {% block title %}
+    <title>Application</title>
+    {% endblock %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c0d9fd;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><b>Hogwarts Enrolment App</b></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Enrol</a></li>
+                <li><a href="/count_students">Total Students</a></li>
+                <li><a href="/addhouses">Add New House</a></li>
+                <li><a href="/clearall">Clear DB</a></li>
+                <li><a href="/studentlist">Edit/Delete Students</a></li>
+                <li><a href="/houselist">Edit/Delete Houses</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

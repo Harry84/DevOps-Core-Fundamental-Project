@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Hogwarts App</title>
+{% endblock %}
+
+{% block content %}
+    <body style="text-align: center">
+        <h1>Houses</h1>
+	  <div class='form'>
+            <form method='POST' action=''>
+		    {{ form.hidden_tag() }}
+		    {{ form.name.lable }} {{ form.name }}
+		    </br>
+		    {{ form.submit }}
+	    </form>
+	 </div>
+	 <div class='houses'>
+		 {% for hous in allhouses %}
+		 {{ hous.name }}</br>
+		 {% endfor %}
+	 </div>
+
+
+    </body>
+{% endblock %}
