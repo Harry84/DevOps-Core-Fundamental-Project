@@ -136,6 +136,26 @@ class TestUpdate(TestBase):
         self.assertIn(b'Marie', response.data)
         # response = self.client.post(url_for('amend_student', prev="namenotpresent"),
         # self.assertEqual(response.status_code, 200)
+
+#for any routes that access the database, test an item we know is in the db is in the html code for the page that displays that route:
+class TestData(TestBase):
+
+    def test_register_get(self):
+        response = self.client.get(url_for('register'))
+        assert "Esme" in response.data.decode()
+        assert "green" in response.data.decode()
+
+    def test_studentlist_get(self):
+        response = self.client.get(url_for('liststudents'))
+        assert "Esme" in response.data.decode()
+        assert "Henry" in response.data.decode()
+
+    def test_houselist_get(self):
+        response = self.client.get(url_for('listhouses'))
+        assert "red" in response.data.decode()
+        assert "yellow" in response.data.decode()
+
+#decode makes the page a string
         
         
 
