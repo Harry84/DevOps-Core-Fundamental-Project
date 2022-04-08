@@ -1,7 +1,7 @@
 from application import app, db
 from application.models import Houses, Students
 from flask import render_template, redirect, url_for, request
-from application.models import EnrolForm, HouseAdd, HouseRemove, AmendStudent
+from application.models import EnrolForm, HouseAdd, HouseRemove, AmendStudent, HouseForm
 import pdb
 
 @app.route('/', methods = ['GET', 'POST'])
@@ -96,6 +96,31 @@ def edit_student():
     allhouses = db.session.query(Houses).all()
     students = Students.query.join(Houses).all()
     return render_template('edit_student.html', form=form, studentss=students)
+
+#making a page to edit houses from
+
+@app.route('/edit_house', methods = ['GET','POST'])
+def edit_house():
+    form = HouseForm()
+    allhouses = db.session.query(Houses).all()
+    return render_template('edit_house.html', form=form, allhouses=allhouses)
+
+#route to edit a house name
+
+@app.route('/amend_house/<old>', methods=['GET', 'POST'])
+def amend_house(old):
+    form = HouseForm()
+    allhouses = db.session.query(Houses).all()
+    amended_house = db.session.query(Houses).filter_by(house_name=old).first()
+    if request.method == 'POST':
+        if amended_house:
+            amended_house.house_name = form.name.data
+            db.session.commit()
+            return redirect(url_for('register'))
+        else:
+            return render_template('edit_house.html', form=form, allhouses=allhouses)   
+    else:
+        return render_template('edit_house.html', form=form, allhouses=allhouses)
 
 #making a list of students to populate a page
 

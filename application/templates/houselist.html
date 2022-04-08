@@ -9,7 +9,7 @@
 
 <div class="houses">
     {% for hous in allhouses %}
-	{{hous.house_name}} <a href="{{ url_for('delhouse', name=hous.house_name) }}"><button type="button">remove House</button></a></p><br>
+	{{hous.house_name}}  {{hous.house_id}}  <a href="{{ url_for('delhouse', name=hous.house_name) }}"><button type="button">remove House</button></a><a href="{{ url_for('amend_house', old=hous.house_name) }}"><button type="button">Edit House</button></a></p><br>
 	
 	{% endfor %}
 </div>
