@@ -130,10 +130,12 @@ class TestUpdate(TestBase):
 #not working below - do I need to hardcode form somehow for student info to then be updated and to test that's happened?
 
     def test_amend_student(self):
-        response = self.client.post(url_for('amend_student', prev="Marie"),
-        data = {"student_name": "Jessica", "house_id": 1},
+        response = self.client.post(url_for('amend_student', prev="Jessica"),
+        data = {"name": "Marie", "houseID": 1},
         follow_redirects=True)
-        self.assertIn(b'Jessica', response.data)
+        self.assertIn(b'Marie', response.data)
+        # response = self.client.post(url_for('amend_student', prev="namenotpresent"),
+        # self.assertEqual(response.status_code, 200)
         
         
 

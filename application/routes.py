@@ -83,6 +83,8 @@ def amend_student(prev):
             amended_student.house_id = form.houseID.data
             db.session.commit()
             return redirect(url_for('register'))
+        else:
+            return render_template('edit_student.html', form=form, allhouses=allhouses)   
     else:
         return render_template('edit_student.html', form=form, allhouses=allhouses)
 
