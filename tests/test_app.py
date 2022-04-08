@@ -77,6 +77,11 @@ class TestRead(TestBase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"Add",response.data)
 
+    def test_read_edit_house(self):
+        response = self.client.get(url_for('edit_house'))
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"Add",response.data)
+
 
 # Write a test to test Post functionality i.e. adding a new student to the db or adding a new house to the db
 
@@ -135,6 +140,12 @@ class TestUpdate(TestBase):
         # response = self.client.post(url_for('amend_student', prev="namenotpresent"),
         # self.assertEqual(response.status_code, 200)
 
+    def test_amend_house(self):
+        response = self.client.post(url_for('amend_house', old="green"),
+        data = {"name": "white"},
+        follow_redirects=True)
+        self.assertIn(b'white', response.data)
+
 #for any routes that access the database, test an item we know is in the db is in the html code for the page that displays that route:
 class TestData(TestBase):
 
@@ -162,6 +173,14 @@ class TestData(TestBase):
         data = {"name": "Marie", "houseID": 1},
         follow_redirects=True)
         assert "Hogwarts" in response.data.decode()
+
+    def test_amend_house_get(self):
+        response = self.client.post(url_for('amend_house', old="green"),
+        data = {"name": "white"},
+        follow_redirects=True)
+        assert "Hogwarts" in response.data.decode()
+
+    
 
 
 #decode makes the page a string

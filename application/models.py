@@ -39,3 +39,8 @@ class AmendStudent(FlaskForm):
     houseID = SelectField("houses", choices = [])
     submit = SubmitField('Add')
 
+class HouseForm(FlaskForm):
+    name = StringField("Enter your preferred new house name", validators=[DataRequired()])
+    # houseID = SelectField("houses", choices = [])
+    submit = SubmitField('Submit')
+
