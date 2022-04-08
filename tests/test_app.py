@@ -1,4 +1,4 @@
-from flask import url_for
+from flask import url_for, request, redirect, render_template
 from flask_testing import TestCase
 
 from application import app, db
@@ -8,7 +8,6 @@ class TestBase(TestCase):
     def create_app(self):
  
         app.config.update(SQLALCHEMY_DATABASE_URI='sqlite:///test.db',
-                SECRET_KEY='tangerines',
                 DEBUG=True,
                 WTF_CSRF_ENABLED=False
                 )
@@ -131,11 +130,9 @@ class TestUpdate(TestBase):
 #not working below - do I need to hardcode form somehow for student info to then be updated and to test that's happened?
 
     def test_amend_student(self):
-        form = EnrolForm()
-        form.name.data = "Jessica"
-        form.houseID.data = 1
-        response = self.client.get(url_for('amend_student', prev="Marie"), follow_redirects=True)
-        self.assertEqual(response.status_code, 200)
+        response = self.client.post(url_for('amend_student', prev="Marie"),
+        data = {"student_name": "Jessica", "house_id": 1},
+        follow_redirects=True)
         self.assertIn(b'Jessica', response.data)
         
         
