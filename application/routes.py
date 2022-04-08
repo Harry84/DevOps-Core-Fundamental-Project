@@ -109,10 +109,7 @@ def liststudents():
 @app.route('/delhouse/<name>',  methods = ['GET', 'DELETE'])
 def delhouse(name):
     house_to_delete = db.session.query(Houses).filter_by(house_name=name).first()
-    print(str(house_to_delete))
-    if house_to_delete == "Gryfinndor" or house_to_delete == "Slytherin" or house_to_delete == "Hufflepuff" or house_to_delete == "Ravenclaw":
-        return redirect(url_for('listhouses'))
-    elif house_to_delete:
+    if house_to_delete:
         db.session.delete(house_to_delete)
         db.session.commit()
         return redirect(url_for('listhouses'))

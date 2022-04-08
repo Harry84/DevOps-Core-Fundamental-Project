@@ -12,8 +12,8 @@ class Houses(db.Model):
     house_name = db.Column(db.String(30), nullable=False)
     students = db.relationship('Students', backref='house_idbr')
 
-    def __repr__(self):
-        return 'Choose {}'.format(self.house_name)
+    # def __repr__(self):
+    #     return 'Choose {}'.format(self.house_name)
 
 class Students(db.Model):
     __tablename__ = 'students'
