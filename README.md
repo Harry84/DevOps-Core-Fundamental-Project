@@ -153,7 +153,31 @@ The overall coverage of the tests is shown in the below image (I have since adde
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="1000"/>
 </p>
 
-Ongoing testing is built into the development process using a continuous integration pipeline.
+Ongoing testing is baked into the ongoing development process using a continuous integration pipeline (CIP) via Jenkins.
+
+###Jenkins
+
+Is an automation server.  In this case I am using it to facilitate building, testing and deployment in a continuous process - in otherwords a pipeline for the app's ongoing integeration and delivery.  I was able to run consecutive builds of the app using Jenkins as well as perform the unit testing I had prewritten via an execute shell script. 
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Execute%20Shell%20for%20Latest%20Build.JPG" width="1000"/>
+</p>
+
+In the below images you can see a build history for the app along with an image showing it linked to this repo.
+
+Execute Shell:
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Execute%20Shell%20for%20Latest%20Build.JPG" width="1000"/>
+</p>
+
+Build History:
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/build%20history.JPG" width="1000"/>
+</p>
+
+
 
 ### Analysis 
 what was tested and why - summary of overall results present
