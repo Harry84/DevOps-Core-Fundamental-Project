@@ -145,11 +145,15 @@ Tests are written to test the functionality of the components and functions comp
 
 Tests are defined in tests.py and all classes and their respective methods are run when pytest is run.
 
+In addition to checking status codes and interogating response data, I have also included classes to test the contents of the data itself following HTTP requests and their respective responses.  By turning html into a string and decoding it one can determine that the change one has attempted to make has indeed been made and exists within the data itself rather than simply in the response using "assert" (please see the TestData class).
+
 The overall coverage of the tests is shown in the below image (I have since added additional tests though the coverage remains the same).
 
 <p align="center">
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="1000"/>
 </p>
+
+Ongoing testing is built into the development process using a continuous integration pipeline.
 
 ### Analysis 
 what was tested and why - summary of overall results present
