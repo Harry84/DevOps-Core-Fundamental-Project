@@ -263,7 +263,7 @@ I have tried to test all available routes and data types - one can see which lin
 
 * I am using Bootstrap 3 for the Navbar.  The Navbar is coded into a base.html which can then be extended for the other pages via code blocks.
 
-* There are various links in the Navbar.  The title and register option bring the user back to the homepage.  The Add Houses link allows a user to enter a new house choice into the db which then becomes accessible in the drop down menu on the homepage.  The edit/delete students and edit/delete houses pages are accessible via links.  Those respective pages look as follows when there are some students already registered:
+* There are various links in the Navbar.  The title and Entrol option bring the user back to the homepage/index.  The Add Houses link allows a user to enter a new house choice into the db which then becomes accessible in the drop down menu on the homepage.  The edit/delete students and edit/delete houses pages are accessible via links.  Those respective pages look as follows when there are some students already registered:
 
 <p align="center">
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/project%20edit%20students.JPG" width="800"/>
