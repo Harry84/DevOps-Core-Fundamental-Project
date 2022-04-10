@@ -155,7 +155,7 @@ The overall coverage of the tests is shown in the below image (I have since adde
 
 Ongoing testing is baked into the ongoing development process using a continuous integration pipeline (CIP) via Jenkins.
 
-###Jenkins
+### Jenkins and automation
 
 Is an automation server.  In this case I am using it to facilitate building, testing and deployment in a continuous process - in otherwords a pipeline for the app's ongoing integeration and delivery.  I was able to run consecutive builds of the app using Jenkins as well as perform the unit testing I had prewritten via an execute shell script. 
 
@@ -163,13 +163,7 @@ Is an automation server.  In this case I am using it to facilitate building, tes
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Execute%20Shell%20for%20Latest%20Build.JPG" width="1000"/>
 </p>
 
-In the below images you can see a build history for the app along with an image showing it linked to this repo.
-
-Execute Shell:
-
-<p align="center">
-<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Execute%20Shell%20for%20Latest%20Build.JPG" width="1000"/>
-</p>
+In the below images you can see a build history for the app and an image showing a subsequent build.
 
 Build History:
 
@@ -177,13 +171,17 @@ Build History:
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/build%20history.JPG" width="1000"/>
 </p>
 
+Successful build following the addition of further functionality and its corresponding unit tests:
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Build%20After%20Changes.JPG" width="1000"/>
+</p>
+
+The two images encapsulate the idea of continous integration, whereby changes to the code are made between builds and the same tests are run to determine if the app is still functioning as intended and if it is still deliverable to users.
+
+### Analysis - what was tested and why - summary of overall results
 
 
-### Analysis 
-what was tested and why - summary of overall results present
-
-### Automation
-CI Server: Jenkins - build server was installed and used to produce a build
 
 ### Front-end: Flask (HTML)
 
