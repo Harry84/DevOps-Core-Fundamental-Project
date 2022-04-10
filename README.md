@@ -214,11 +214,25 @@ I have tried to test all available routes and data types - one can see which lin
 
 * The entry point or homepage is navigated to via the "/" url suffix or alternatively the /register url endpoint.  It provides a portal for new/existing students to register their attendance of a particular house.  The houses are accessible via a drop down menu and a user input box is available to accept a user's name.
 
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/project%20index.JPG" width="800"/>
+</p>
+
 * Once users input their name and house choice they are able to submit via the "sort me non-random hat" button.  Their records then appear on the left hand side of the page along with any other students currently registered and their respective houses. 
 
 * I am using Bootstrap 3 for the Navbar.  The Navbar is coded into a base.html which can then be extended for the other pages via code blocks.
 
-* There are various links in the Navbar.  The title and register option bring the user back to the homepage.  The Add Houses link allows a user to enter a new house choice into the db which then becomes accessible in the drop down menu on the homepage.
+* There are various links in the Navbar.  The title and register option bring the user back to the homepage.  The Add Houses link allows a user to enter a new house choice into the db which then becomes accessible in the drop down menu on the homepage.  The edit/delete students and edit/delete houses pages are accessible via links.  Those respective pages look as follows when there are some students already registered:
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/project%20edit%20students.JPG" width="800"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/project%20edit%20houses.JPG" width="800"/>
+</p>
+
+Clicking on the appropriate button will either delete an entry or bring up a form to enter new information to update.
 
 
 ### Version Control: Git
