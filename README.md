@@ -177,7 +177,7 @@ Successful build following the addition of further functionality and its corresp
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Build%20After%20Changes.JPG" width="700"/>
 </p>
 
-The two images encapsulate the idea of continous integration, whereby changes to the code are made between builds and the same tests are run to determine if the app is still functioning as intended and if it is still deliverable to users.
+The two images encapsulate the idea of continous integration, whereby changes to the code are made between builds and the same tests (or perhaps additional ones too) are run to determine if the app is still functioning as intended and if it is still deliverable to users.
 
 ### Analysis - what was tested and why - summary of overall results
 
