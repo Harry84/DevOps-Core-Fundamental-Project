@@ -9,7 +9,7 @@
 
 <div class="students">
     {% for students in studentss %}
-	{{students.student_name}}  {{students.house_idbr.house_name}}  <a href="{{ url_for('delete_student', name=students.student_name) }}"><button type="button">remove student</button></a> <a href="{{ url_for('amend_student', prev=students.student_name) }}"><button type="button">edit student</button></a></p><br>
+	{{students.student_name}}  {{students.house_idbr.house_name}}  <a href="{{ url_for('delete_student', name=students.student_name) }}"><button type="button">Remove Student</button></a> <a href="{{ url_for('amend_student', prev=students.student_name) }}"><button type="button">Edit Student</button></a></p><br>
 	
 	{% endfor %}
 </div>
