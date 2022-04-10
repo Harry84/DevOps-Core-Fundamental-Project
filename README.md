@@ -139,6 +139,8 @@ I define the classes I want to use in models.py.  Each class has attributes whic
     
 ### Risk Analysis
 
+My risk assessment attempts to identify potential threats to the integrity and future success of the project both in its function as a quality gate to be assessed on and as a pseudo app to be deployed in the public domain.  Control Measures are implemented and or proposed in order to protect against these perceived threats or risks.
+
 Please click image below for larger view/link to file in repo
 
 <p align="center">
