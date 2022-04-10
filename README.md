@@ -5,9 +5,9 @@
 
 https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/README.md#Introduction
 
-[Introduction](###introduction)
+[Introduction](#introduction)
 
-[ERD](###entity-relationship-diagram)
+[ERD](#entity-relationship-diagram)
 
 <a name="introduction"></a>
 ### Introduction
