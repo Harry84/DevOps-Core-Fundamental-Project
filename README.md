@@ -133,6 +133,10 @@ I define the classes I want to use in models.py.  Each class has attributes whic
 
 ![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Risk%20Assessment%20Screenshot.JPG)
 
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Risk%20Assessment%20Screenshot.JPG" width="800"/>
+</p>
+
 ### Unit Testing
 
 ### Analysis 
