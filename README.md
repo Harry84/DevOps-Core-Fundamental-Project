@@ -43,6 +43,8 @@ and how it applies here.  On a daily basis, I will then set tasks to enable thes
 turnaround time of the project I will view each day as its own sprint and try to allocate tasks to my Trello board in the morning, as well 
 updating the backlog, sprint backlog and completed sprint at the end of each day.
 
+---
+
 <a name="starting-out"></a>
 ### Starting out
 
@@ -66,12 +68,16 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Hogwarts%20Houses%20ERD.drawio.png" width="800"/>
 </p>
 
+---
+
 <a name="table-relationship"></a>
 ### Table relationship
 
 The two tables I include are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.  A years table is something that could be developed in future.
 
 * Devised user stories - I decided to consider the examiner user story as a key one - after all the purpose of this project is to assess our progress and to be a quality gate therefore that is the most important user story - a collection of must haves!  This isn't intended at this stage to be an app that is used widely.
+
+---
 
 <a name="user-stories"></a>
 ### User Stories
@@ -144,9 +150,7 @@ _Won't have:_
 * Much interactivity for a user
 * A login system
 
-### Database
-
-I have instatiated an SQL server on the GCP.  I am connecting to my database schema via Workbench.
+--- 
 
 <a name="crud-functionality"></a>
 ### CRUD Functionality
@@ -165,6 +169,8 @@ I define the classes I want to use in models.py.  Each class has attributes whic
     Student name and house entries can be updated.  House name entries can be updated.
 * Delete:
     Student and House entries can be deleted.
+    
+---
 
 <a name="risk-analysis"></a>
 ### Risk Analysis
@@ -177,6 +183,8 @@ Please click image below for larger view/link to file in repo
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Risk%20Assessment%20Screenshot.JPG" width="1000"/>
 </p>
 
+---
+
 <a name="unit-testing"></a>
 ### Unit Testing
 
@@ -185,6 +193,8 @@ Tests are written to test the functionality of the individual components and fun
 Tests are defined in test_app.py in the tests folder and all classes and their respective methods are run when pytest is run.  This should be repeatable when this repo is cloned down and the requirements (including pytest module) are installed using the requirements.txt file.
 
 Ongoing testing is baked into the development process using a continuous integration pipeline (CIP) via Jenkins.
+
+---
 
 <a name="jenkins"></a>
 ### Jenkins and automation
@@ -211,8 +221,7 @@ Successful build following the addition of further functionality and its corresp
 
 The two images encapsulate the idea of continous integration, whereby changes to the code are made between builds and the same tests (or perhaps additional ones too) are run to determine if the app is still functioning as intended and if it is still deliverable to users.  Ongoing development of the app is test driven.  Any changes are subjected to the same collection of tests such that a high standard of performance is maintained and future proofing is inbuilt.
 
-### CI Pipeline Diagram
-
+---
 
 <a name="test-analysis"></a>
 ### Test Analysis - what was tested and why - summary of overall results
@@ -241,6 +250,8 @@ The 98% coverage total indicates that most routes and functionality of the app h
 
 I have tried to test all available routes and data types - one can see which lines in routes.py have not been covered by the tests.  There are likely more use scenarios that aren't covered by testing but in terms of the basic core functionality I believe all aspects have been covered off here i.e. most of the different possible interactions a user might have.  It should be noted that users are unable to delete houses that have students due to that dependency - the app throws an error in this scenario.  This is something that would ideally be avoided even via a message along the lines of "unable to perform this action as this house currently has students registered to it".
 
+---
+
 <a name="front-end"></a>
 ### Front-End Design: Flask (HTML)
 
@@ -266,10 +277,14 @@ I have tried to test all available routes and data types - one can see which lin
 
 Clicking on the appropriate button will either delete an entry or bring up a form to enter new information to update.
 
+---
+
 <a name="version-control"></a>
 ### Version Control: Git
 
 I plan to use git branching to develop different features/components of my app.  Once I have a basic functionality working (app-setup) I will branch off when trying to tackle more complex components such as the update functionality via an HTML form.  This should be evidenced via my commit history.  Such an approach helps ensure the rest of the app retains its functionality whilst one individual element is being developed (although of course there may be dependencies) as it restricts the changes to one portion of the code.  I am also then able to confirm the code is working as best I can on whatever feature branch I am on before submitting a pull request, helping to ensure there is always a working version of the code in continuous delivery.  It mimics best practice in a professional environment where there'd be a dev branch and multiple developers working on respective branches.  Proposed merges are then peer reviewed and any conflicts resolved beforehand.  This keeps the codebase functional as a whole.  I'm trying to build the right habits. 
+
+---
 
 <a name="future-development"></a>
 ### Possible Future Development
@@ -281,6 +296,8 @@ I plan to use git branching to develop different features/components of my app. 
 * Essentially a yearbook with an academic twist.  It could be a learning portal for Harry Potter enthusiasts.
 
 * If this app were to continue with an Harry Potter theme in a commercial sense then permission/license would need to be sought out from the rights holders.  It might be simpler to develop the app fully with generic names or find a use outside of that franchise.
+
+---
 
 <a name="acknowledgements"></a>
 ### Acknowledgements
