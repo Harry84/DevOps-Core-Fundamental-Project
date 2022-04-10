@@ -195,7 +195,7 @@ The 98% coverage total indicates that most routes and functionality of the app h
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Build%20running%20latest%20tests.JPG" width="700"/>
 </p>
 
-I have tried to test all available routes and data types.  There are likely more use scenarios that aren't covered by testing but in terms of the basic core functionality I believe all aspects have been covered off here i.e. most of the different possible interactions a user might have.  It should be noted that users are unable to delete houses that have students due to that dependency - the app throws an error in this scenario.  This is something that would ideally be avoided even via a message along the lines of "unable to perform this action as this house currently has students registered to it".
+I have tried to test all available routes and data types - one can see which lines in routes.py have not been covered by the tests.  There are likely more use scenarios that aren't covered by testing but in terms of the basic core functionality I believe all aspects have been covered off here i.e. most of the different possible interactions a user might have.  It should be noted that users are unable to delete houses that have students due to that dependency - the app throws an error in this scenario.  This is something that would ideally be avoided even via a message along the lines of "unable to perform this action as this house currently has students registered to it".
 
 
 ### Front-end: Flask (HTML)
