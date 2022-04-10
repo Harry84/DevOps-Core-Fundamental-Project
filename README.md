@@ -185,7 +185,11 @@ The overall coverage of the tests is shown in the below image (I have since adde
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="1000"/>
 </p>
 
-The 98% coverage total indicates that most routes and functionality of the app have been tested and are working as intended.
+The 98% coverage total indicates that most routes and functionality of the app have been tested and are working as intended.  When the tests were run as part of a Jenkins build, a coverage report is then included in the console log for said build.  Below is a screen showing these results (albeit for a slighly different version where the coverage is different):
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Build%20running%20latest%20tests.JPG" width="700"/>
+</p>
 
 
 ### Front-end: Flask (HTML)
