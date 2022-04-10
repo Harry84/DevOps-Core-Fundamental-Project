@@ -195,7 +195,7 @@ Ongoing testing is baked into the development process using a continuous integra
 ---
 
 <a name="jenkins"></a>
-### Jenkins and automation
+### Jenkins and Automation
 
 Jenkins is an automation server.  In this case I am using it to facilitate building, testing and deployment in a continuous process - in other words a pipeline for the app's ongoing integration and delivery.  I was able to run consecutive builds of the app using Jenkins as well as perform the unit testing I had prewritten via an execute shell script (see image below): 
 
