@@ -162,9 +162,9 @@ I define the classes I want to use in models.py.  Each class has attributes whic
 * Create:
     Students and Houses are created
 * Read:
-    Student and house table entries are read
+    Student and House table entries are read
 * Update:
-    Student name and house entries can be updated.  House name entries can be updated.
+    Student name and House entries can be updated.  House name entries can be updated.
 * Delete:
     Student and House entries can be deleted.
     
