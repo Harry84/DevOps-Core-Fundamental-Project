@@ -3,9 +3,11 @@
 
 ### Contents
 
-https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/README.md#Introduction
-
 [Introduction](#introduction)
+
+[Approach](#approach)
+
+[Starting Out](#starting-out)
 
 [ERD](#entity-relationship-diagram)
 
@@ -19,6 +21,7 @@ As an MVP, two tables will be included in a relational db - one for houses and a
 Ideally I will try to include a random element to assign houses (sorting hat) to prospective students and potentially will extend to include another table, student 
 years.
 
+<a name="approach"></a>
 ### Approach
 
 I aim to use an agile approach in carrying out this project.  I will interpret user stories corresponding to my understanding of the MVP
@@ -26,6 +29,7 @@ and how it applies here.  On a daily basis, I will then set tasks to enable thes
 turnaround time of the project I will view each day as its own sprint and try to allocate tasks to my Trello board in the morning, as well 
 updating the backlog, sprint backlog and completed sprint at the end of each day.
 
+<a name="starting-out"></a>
 ### Starting out
 
 * I decided to use Trello from the get go to help with planning and prioritisation.  Each day is treated as a sprint with its own backlog.  At the end of the day I move the completed task cards over to the completed sprint section of the board on the right hand side (see image below).
