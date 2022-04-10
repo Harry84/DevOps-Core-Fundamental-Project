@@ -153,11 +153,11 @@ The overall coverage of the tests is shown in the below image (I have since adde
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="1000"/>
 </p>
 
-Ongoing testing is baked into the ongoing development process using a continuous integration pipeline (CIP) via Jenkins.
+Ongoing testing is baked into the development process using a continuous integration pipeline (CIP) via Jenkins.
 
 ### Jenkins and automation
 
-Is an automation server.  In this case I am using it to facilitate building, testing and deployment in a continuous process - in otherwords a pipeline for the app's ongoing integeration and delivery.  I was able to run consecutive builds of the app using Jenkins as well as perform the unit testing I had prewritten via an execute shell script. 
+Jenkins is an automation server.  In this case I am using it to facilitate building, testing and deployment in a continuous process - in otherwords a pipeline for the app's ongoing integeration and delivery.  I was able to run consecutive builds of the app using Jenkins as well as perform the unit testing I had prewritten via an execute shell script (see image below): 
 
 <p align="center">
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Execute%20Shell%20for%20Latest%20Build.JPG" width="1000"/>
