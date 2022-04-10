@@ -300,7 +300,7 @@ I plan to use git branching to develop different features/components of my app. 
 <a name="acknowledgements"></a>
 ### Acknowledgements
 
-Thanks especially to Earl Gray for his expert tutelage and sticking with us!  A special note also to Leon Robison for providing assistance when it was much needed.  Also to the rest of my cohort for their continued support and guidance :)
+Thanks especially to Earl Gray for his expert tutelage and sticking with us!  A special mention also to Leon Robison for providing assistance when it was much needed.  Also to the rest of my cohort for their continued support and guidance :)
 
 Also I'd like to thank J.K. Rowling for use of her house names and stories as inspiration for this app and would like to state this has strictly been for educational purposes and will not ever be put to commercial use.
 
