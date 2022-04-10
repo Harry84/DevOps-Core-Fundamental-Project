@@ -17,7 +17,7 @@ and how it applies here.  On a daily basis, I will then set tasks to enable thes
 turnaround time of the project I will view each day as its own sprint and try to allocate tasks to my Trello board in the morning, as well 
 updating the backlog, sprint backlog and completed sprint at the end of each day.
 
-### Day 1
+### Starting out
 * Decided to use Trello from the get go to help with planning and prioritisation.  Each day is treated as a sprint with its own backlog.  At the end of the day I move the completed task cards over to the completed sprint section of the board on the right hand side (see image below).
 
 <p align="center">
@@ -140,6 +140,10 @@ Please click image below for larger view/link to file in repo
 </p>
 
 ### Unit Testing
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="800"/>
+</p>
 
 ### Analysis 
 what was tested and why - summary of overall results present
