@@ -20,10 +20,9 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 ### Day 1
 * Decided to use Trello from the get go to help with planning and prioritisation.  Each day is treated as a sprint with its own backlog.  At the end of the day I move the completed task cards over to the completed sprint section of the board on the right hand side (see image below).
 
-![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Trello%20Board%20Day1.JPG)
-
-<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Trello%20Board%20Day1.JPG" width="700"/>
-
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Trello%20Board%20Day1.JPG" width="1000"/>
+</p>
 
 * This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello Board.
 * Decided to simplify my project to something that was one to many - came up with this Harry Potter Houses idea.
