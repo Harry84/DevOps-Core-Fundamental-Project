@@ -163,7 +163,7 @@ Jenkins is an automation server.  In this case I am using it to facilitate build
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Execute%20Shell%20for%20Latest%20Build.JPG" width="700"/>
 </p>
 
-In the below images you can see a build history for the app and an image showing a subsequent build.
+In the below images you can see a build history for the app and an image showing the most recent build.
 
 Build History:
 
