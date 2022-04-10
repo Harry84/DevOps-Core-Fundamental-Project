@@ -149,7 +149,7 @@ Ongoing testing is baked into the development process using a continuous integra
 
 ### Jenkins and automation
 
-Jenkins is an automation server.  In this case I am using it to facilitate building, testing and deployment in a continuous process - in other words a pipeline for the app's ongoing integeration and delivery.  I was able to run consecutive builds of the app using Jenkins as well as perform the unit testing I had prewritten via an execute shell script (see image below): 
+Jenkins is an automation server.  In this case I am using it to facilitate building, testing and deployment in a continuous process - in other words a pipeline for the app's ongoing integration and delivery.  I was able to run consecutive builds of the app using Jenkins as well as perform the unit testing I had prewritten via an execute shell script (see image below): 
 
 <p align="center">
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Execute%20Shell%20for%20Latest%20Build.JPG" width="700"/>
@@ -169,11 +169,11 @@ Successful build following the addition of further functionality and its corresp
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Build%20After%20Changes.JPG" width="700"/>
 </p>
 
-The two images encapsulate the idea of continous integration, whereby changes to the code are made between builds and the same tests (or perhaps additional ones too) are run to determine if the app is still functioning as intended and if it is still deliverable to users.
+The two images encapsulate the idea of continous integration, whereby changes to the code are made between builds and the same tests (or perhaps additional ones too) are run to determine if the app is still functioning as intended and if it is still deliverable to users.  Ongoing development of the app is test driven.  Any changes are subjected to the same collection of tests such that a high standard of performance is maintained and future proofing is inbuilt.
 
 ### Analysis - what was tested and why - summary of overall results
 
-Each route is tested, be it calling a function with a Post or Delete or be it simply an html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
+Each route is tested, be one that calls a function with a Post or Delete or be it simply an html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
 
 Each class tests a different aspect of functionality.  For example the read class tests the responses for all the pages where data from the dummy database should be displayed - i.e. register, listhouses, liststudents.
 
