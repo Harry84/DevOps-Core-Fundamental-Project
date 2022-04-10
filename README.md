@@ -143,7 +143,7 @@ Please click image below for larger view/link to file in repo
 
 Tests are written to test the functionality of the individual components and functions comprising the app.  As this is a Flask application, I create a TestBase class with the prerequisite three methods used in defining the test conditions: create_app(), setUp() and TearDown().  These are run sequentially around each unit test i.e. the database is setup, a given test is run, the database is torn down then on to the next test, rinse and repeat.  Essentially building a dummy database for the purposes of testing using sqlite (test.db) within which I instantiate some dummy data using for loops (adding to the Students and Houses tables).  
 
-Tests are defined in test_app.py in the tests folder and all classes and their respective methods are run when pytest is run.  This should be repeatable when this repo is cloned down.
+Tests are defined in test_app.py in the tests folder and all classes and their respective methods are run when pytest is run.  This should be repeatable when this repo is cloned down and the requirements (including pytest module) are installed using the requirements.txt file.
 
 Ongoing testing is baked into the development process using a continuous integration pipeline (CIP) via Jenkins.
 
