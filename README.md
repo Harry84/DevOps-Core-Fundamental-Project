@@ -133,9 +133,9 @@ I define the classes I want to use in models.py.  Each class has attributes whic
 * Read:
     Student and house table entries are read
 * Update:
-    Student entries are updated (routes.py line 67)
+    Student name and house entries can be updated.  House name entries can be updated.
 * Delete:
-    Student entries are deleted (routes.py line 38)
+    Student and House entries can be deleted.
     
 ### Risk Analysis
 
