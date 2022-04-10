@@ -33,6 +33,8 @@
 
 [Acknowledgements](#acknowledgements)
 
+---
+
 <a name="introduction"></a>
 ### Introduction
 
