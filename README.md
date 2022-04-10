@@ -28,7 +28,7 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 
 [Link to Trello Board](https://trello.com/invite/b/rHR887uJ/b3f5c7e0b5ef60eb9c39ccbd42b3cae5/agile-sprint-board)
 
-* This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello Board and how that compares to the final version.
+* This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello board and how that compares to the most recent Trello board.
 * Decided to simplify my project to something that was one to many - came up with this Harry Potter Houses idea.
 * Signed up for drawio and did a basic sketch of the table relationships between students, houses and years (should I have time to include student year)
  
