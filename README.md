@@ -1,5 +1,8 @@
 # DevOps-Core-Fundamental-Project: 
 ## Harry Potter Sorting Hat
+
+### Contents
+
 ### Intro
 
 This is a basic web app intended to allow users (aka Hogwarts Students) to register their attendance of one of the four houses at Hogwarts.
@@ -170,6 +173,10 @@ Successful build following the addition of further functionality and its corresp
 </p>
 
 The two images encapsulate the idea of continous integration, whereby changes to the code are made between builds and the same tests (or perhaps additional ones too) are run to determine if the app is still functioning as intended and if it is still deliverable to users.  Ongoing development of the app is test driven.  Any changes are subjected to the same collection of tests such that a high standard of performance is maintained and future proofing is inbuilt.
+
+### CI Pipeline Diagram
+
+
 
 ### Analysis - what was tested and why - summary of overall results
 
