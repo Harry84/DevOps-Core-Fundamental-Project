@@ -128,6 +128,8 @@ I define the classes I want to use in models.py.  Each class has attributes whic
     
 ### Risk Analysis
 
+![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Risk%20Assessment%20Screenshot.JPG)
+
 ### Unit Testing
 
 ### Analysis 
