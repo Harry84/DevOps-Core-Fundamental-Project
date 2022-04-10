@@ -68,8 +68,6 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Hogwarts%20Houses%20ERD.drawio.png" width="800"/>
 </p>
 
----
-
 <a name="table-relationship"></a>
 ### Table relationship
 
