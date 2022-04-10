@@ -9,6 +9,7 @@ https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/README.md#I
 
 [ERD](###entity-relationship-diagram)
 
+<a name="introduction"></a>
 ### Introduction
 
 This is a basic web app intended to allow users (aka Hogwarts Students) to register their attendance of one of the four houses at Hogwarts.
@@ -38,7 +39,8 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 * This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello board and how that compares to the most recent Trello board.
 * Decided to simplify my project to something that was one to many - came up with this Harry Potter Houses idea.
 * Signed up for drawio and did a basic sketch of the table relationships between students, houses and years (should I have time to include student year)
- 
+
+<a name="entity-relationship-diagram"></a>
 ### Entity Relationship Diagram:
 
 
