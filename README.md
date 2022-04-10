@@ -175,9 +175,13 @@ The two images encapsulate the idea of continous integration, whereby changes to
 
 Each route is tested, be it calling a function with a Post or Delete or be it simply an app html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
 
+Each class tests a different aspect of functionality.  For example the read class tests the responses for all the pages where data from the dummy database should be displayed - i.e. register, listhouses, liststudents.
+
 In addition to checking status codes and interogating response data, I have also included classes to test the contents of the data itself following HTTP requests and their respective responses.  By turning html into a string and decoding it one can determine that the change one has attempted to make has indeed been made and exists within the data itself rather than simply in the response (please see use of "assert" in the TestData class).
 
 For example in the case of the edit functionality whereby a user wants to change a student's name or house or indeed change the name of a house one needs to test the route for the corresponding function (amend student or amend house).  If I supply a particular name in the form data does that name then appear in the actual db data following the post request?
+
+Please see the comments within test_app.py which describe the purposes of each test class.
 
 The overall coverage of the tests is shown in the below image (I have since added additional tests though the coverage remains the same).
 
