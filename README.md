@@ -131,10 +131,10 @@ I define the classes I want to use in models.py.  Each class has attributes whic
     
 ### Risk Analysis
 
-![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Risk%20Assessment%20Screenshot.JPG)
+Please click image below for larger view/link to file in repo
 
 <p align="center">
-<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Risk%20Assessment%20Screenshot.JPG" width="800"/>
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Risk%20Assessment%20Screenshot.JPG" width="1000"/>
 </p>
 
 ### Unit Testing
