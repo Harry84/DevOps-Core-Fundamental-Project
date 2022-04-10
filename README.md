@@ -11,6 +11,28 @@
 
 [ERD](#entity-relationship-diagram)
 
+[Table Relationship](#table-relationship)
+
+[User Stories](#user-stories)
+
+[CRUD Functionality](#crud-functionality)
+
+[Risk Analysis](#risk-analysis)
+
+[Unit Testing](#unit-testing)
+
+[Jenkins and Automation](#jenkins)
+
+[Test Analysis](#test-analysis)
+
+[Front End Design](#front-end)
+
+[Version Control](#version-control)
+
+[Possible Future Development](#future-dev)
+
+[Acknowledgements](#acknowledgements)
+
 <a name="introduction"></a>
 ### Introduction
 
@@ -52,12 +74,14 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Hogwarts%20Houses%20ERD.drawio.png" width="800"/>
 </p>
 
+<a name="table-relationship"></a>
 ### Table relationship
 
 The two tables I include are Students and Houses - they share a one to many relationship in that Houses may have many students but each student may only be in one house.  This is shown symbolically via the line linking house_id within the Student table to house_id in the Houses table.   Each house can have many students, therefore the connecting line branches where it meets the Houses table.  Each student can only have one house, denoted by the single branch where the line meets the Students table.  Each student record has a house_id corresponding to the id of that student's house.  House_id is the primary key in the Houses table and the foreign key in the Students table.  A years table is something that could be developed in future.
 
 * Devised user stories - I decided to consider the examiner user story as a key one - after all the purpose of this project is to assess our progress and to be a quality gate therefore that is the most important user story - a collection of must haves!  This isn't intended at this stage to be an app that is used widely.
 
+<a name="user-stories"></a>
 ### User Stories
 
 _Must Haves:_
@@ -132,6 +156,7 @@ _Won't have:_
 
 I have instatiated an SQL server on the GCP.  I am connecting to my database schema via Workbench.
 
+<a name="crud-functionality"></a>
 ### CRUD Functionality
 
 Using Flask and SQLAlchemy, I instantiate a db object using:
@@ -148,7 +173,8 @@ I define the classes I want to use in models.py.  Each class has attributes whic
     Student name and house entries can be updated.  House name entries can be updated.
 * Delete:
     Student and House entries can be deleted.
-    
+
+<a name="risk-analysis"></a>
 ### Risk Analysis
 
 My risk assessment attempts to identify potential threats to the integrity and future success of the project both in its function as a quality gate to be assessed on and as a pseudo app to be deployed in the public domain.  Control Measures are implemented and or proposed in order to protect against these perceived threats or risks.
@@ -159,6 +185,7 @@ Please click image below for larger view/link to file in repo
 <img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Risk%20Assessment%20Screenshot.JPG" width="1000"/>
 </p>
 
+<a name="unit-testing"></a>
 ### Unit Testing
 
 Tests are written to test the functionality of the individual components and functions comprising the app.  As this is a Flask application, I create a TestBase class with the prerequisite three methods used in defining the test conditions: create_app(), setUp() and TearDown().  These are run sequentially around each unit test i.e. the database is setup, a given test is run, the database is torn down then on to the next test, rinse and repeat.  Essentially building a dummy database for the purposes of testing using sqlite (test.db) within which I instantiate some dummy data using for loops (adding to the Students and Houses tables).  
@@ -167,6 +194,7 @@ Tests are defined in test_app.py in the tests folder and all classes and their r
 
 Ongoing testing is baked into the development process using a continuous integration pipeline (CIP) via Jenkins.
 
+<a name="jenkins"></a>
 ### Jenkins and automation
 
 Jenkins is an automation server.  In this case I am using it to facilitate building, testing and deployment in a continuous process - in other words a pipeline for the app's ongoing integration and delivery.  I was able to run consecutive builds of the app using Jenkins as well as perform the unit testing I had prewritten via an execute shell script (see image below): 
@@ -194,8 +222,8 @@ The two images encapsulate the idea of continous integration, whereby changes to
 ### CI Pipeline Diagram
 
 
-
-### Analysis - what was tested and why - summary of overall results
+<a name="test-analysis"></a>
+### Test Analysis - what was tested and why - summary of overall results
 
 Each route is tested, be it one that calls a function with a Post or Delete or be it simply an html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
 
@@ -221,8 +249,8 @@ The 98% coverage total indicates that most routes and functionality of the app h
 
 I have tried to test all available routes and data types - one can see which lines in routes.py have not been covered by the tests.  There are likely more use scenarios that aren't covered by testing but in terms of the basic core functionality I believe all aspects have been covered off here i.e. most of the different possible interactions a user might have.  It should be noted that users are unable to delete houses that have students due to that dependency - the app throws an error in this scenario.  This is something that would ideally be avoided even via a message along the lines of "unable to perform this action as this house currently has students registered to it".
 
-
-### Front-end: Flask (HTML)
+<a name="front-end"></a>
+### Front-End Design: Flask (HTML)
 
 * The entry point or homepage is navigated to via the "/" url suffix or alternatively the /register url endpoint.  It provides a portal for new/existing students to register their attendance of a particular house.  The houses are accessible via a drop down menu and a user input box is available to accept a user's name.
 
@@ -246,11 +274,12 @@ I have tried to test all available routes and data types - one can see which lin
 
 Clicking on the appropriate button will either delete an entry or bring up a form to enter new information to update.
 
-
+<a name="version-control"></a>
 ### Version Control: Git
 
 I plan to use git branching to develop different features/components of my app.  Once I have a basic functionality working (app-setup) I will branch off when trying to tackle more complex components such as the update functionality via an HTML form.  This should be evidenced via my commit history.  Such an approach helps ensure the rest of the app retains its functionality whilst one individual element is being developed (although of course there may be dependencies) as it resricts the changes to one portion of the code.  I am also then able to confirm the code is working as best I can on whatever feature branch I am on before submitting a pull request, helping to ensure there is always a working version of the code in continuous delivery.  It mimics best practice in a professional environment where there'd be a dev branch and multiple developers working on respective branches.  Proposed merges are then peer reviewed and any conflicts resolved beforehand.  This keeps the codebase functional as a whole.  I'm trying to build the right habits. 
 
+<a name="future-development"></a>
 ### Possible Future Development
 
 * It would be ideal to add a login system and levels of permission for various aspects of functionality.  Students shouldn't be able to delete records other than their own for example. 
@@ -259,6 +288,9 @@ I plan to use git branching to develop different features/components of my app. 
 
 * Essentially a yearbook with an academic twist.  It could be a learning portal for Harry Potter enthusiasts.
 
+* If this app were to continue with an Harry Potter theme in a commercial sense then permission/license would need to be sought out from the rights holders.  It might be simpler to develop the app fully with generic names or find a use outside of that franchise.
+
+<a name="acknowledgements"></a>
 ### Acknowledgements
 
 Thanks especially to Earl Gray for his expert tutelage and sticking with us!  A special note also to Leon Robison for providing assistance when it was much needed.  Also to the rest of my cohort for their continued support and guidance :)
