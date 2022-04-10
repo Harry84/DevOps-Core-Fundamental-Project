@@ -3,35 +3,23 @@
 
 ### Contents
 
-[Introduction](#introduction)
+---
 
-[Approach](#approach)
-
-[Starting Out](#starting-out)
-
-[ERD](#entity-relationship-diagram)
-
-[Table Relationship](#table-relationship)
-
-[User Stories](#user-stories)
-
-[CRUD Functionality](#crud-functionality)
-
-[Risk Analysis](#risk-analysis)
-
-[Unit Testing](#unit-testing)
-
-[Jenkins and Automation](#jenkins)
-
-[Test Analysis](#test-analysis)
-
-[Front End Design](#front-end)
-
-[Version Control](#version-control)
-
-[Possible Future Development](#future-dev)
-
-[Acknowledgements](#acknowledgements)
+* [Introduction](#introduction)
+* [Approach](#approach)
+* [Starting Out](#starting-out)
+* [ERD](#entity-relationship-diagram)
+* [Table Relationship](#table-relationship)
+* [User Stories](#user-stories)
+* [CRUD Functionality](#crud-functionality)
+* [Risk Analysis](#risk-analysis)
+* [Unit Testing](#unit-testing)
+* [Jenkins and Automation](#jenkins)
+* [Test Analysis](#test-analysis)
+* [Front End Design](#front-end)
+* [Version Control](#version-control)
+* [Possible Future Development](#future-dev)
+* [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -44,6 +32,8 @@ As an MVP, two tables will be included in a relational db - one for houses and a
 
 Ideally I will try to include a random element to assign houses (sorting hat) to prospective students and potentially will extend to include another table, student 
 years.
+
+---
 
 <a name="approach"></a>
 ### Approach
