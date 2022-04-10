@@ -173,7 +173,7 @@ The two images encapsulate the idea of continous integration, whereby changes to
 
 ### Analysis - what was tested and why - summary of overall results
 
-Each route is tested, be it calling a function with a Post or Delete or be it simply an app html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
+Each route is tested, be it calling a function with a Post or Delete or be it simply an html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
 
 Each class tests a different aspect of functionality.  For example the read class tests the responses for all the pages where data from the dummy database should be displayed - i.e. register, listhouses, liststudents.
 
