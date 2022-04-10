@@ -20,14 +20,14 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 ### Day 1
 * Decided to use Trello from the get go to help with planning and prioritisation.  Each day is treated as a sprint with its own backlog.  At the end of the day I move the completed task cards over to the completed sprint section of the board on the right hand side (see image below).
 
-![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/Trello%20Board%20Day1.JPG)
+![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Trello%20Board%20Day1.JPG)
 
 
 * This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello Board.
 * Decided to simplify my project to something that was one to many - came up with this Harry Potter Houses idea.
 * Signed up for drawio and did a basic sketch of the table relationships between students, houses and years (should I have time to include student year) - aka Entity Relationship Diagram (see below):
 
-![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/Hogwarts%20Houses%20ERD.drawio.png)
+![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Hogwarts%20Houses%20ERD.drawio.png)
 
 * Devised user stories - I decided to consider the examiner user story as a key one - after all the purpose of this project is to assess our progress and to be a quality gate therefore that is the most important user story - a collection of must haves!  This isn't intended at this stage to be an app that is used widely.
 
