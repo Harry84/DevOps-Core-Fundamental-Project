@@ -22,7 +22,7 @@ updating the backlog, sprint backlog and completed sprint at the end of each day
 
 ![alt text](https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Trello%20Board%20Day1.JPG)
 
-<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Trello%20Board%20Day1.JPG" width="100"/>
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Trello%20Board%20Day1.JPG" width="700"/>
 
 
 * This was a setup and planning day mainly - you can see roughly what I achieved in the completed tasks on the Trello Board.
