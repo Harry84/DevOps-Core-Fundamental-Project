@@ -3,7 +3,7 @@
 
 ### Contents
 
-### Intro
+### Introduction
 
 This is a basic web app intended to allow users (aka Hogwarts Students) to register their attendance of one of the four houses at Hogwarts.
 
