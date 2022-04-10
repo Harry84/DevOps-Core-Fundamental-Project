@@ -141,8 +141,14 @@ Please click image below for larger view/link to file in repo
 
 ### Unit Testing
 
+Tests are written to test the functionality of the components and functions comprising the app individually and separately.  As this is a Flask application, I create a TestBase class with the prerequisite three methods used in defining the test conditions: create_app(), setUp() and TearDown() which are run sequentially before and after each unit test.  Essentially building a dummy database for the purposes of testing using sqlite (test.db) within which I instantiate some dummy data using for loops (adding to the Students and Houses tables) with the intent of using this data with each unit test.  Each route is tested, be it calling a function with a Post or Delete or be it simply an app html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
+
+Tests are defined in tests.py and all classes and their respective methods are run when pytest is run.
+
+The overall coverage of the tests is shown in the below image (I have since added additional tests though the coverage remains the same).
+
 <p align="center">
-<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="800"/>
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="1000"/>
 </p>
 
 ### Analysis 
