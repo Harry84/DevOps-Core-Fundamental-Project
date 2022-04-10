@@ -141,17 +141,9 @@ Please click image below for larger view/link to file in repo
 
 ### Unit Testing
 
-Tests are written to test the functionality of the individual components and functions comprising the app.  As this is a Flask application, I create a TestBase class with the prerequisite three methods used in defining the test conditions: create_app(), setUp() and TearDown().  These are run sequentially around each unit test i.e. the database is setup, a given test is run, the database is torn down then on to the next test, rinse and repeat.  Essentially building a dummy database for the purposes of testing using sqlite (test.db) within which I instantiate some dummy data using for loops (adding to the Students and Houses tables).  Each route is tested, be it calling a function with a Post or Delete or be it simply an app html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
+Tests are written to test the functionality of the individual components and functions comprising the app.  As this is a Flask application, I create a TestBase class with the prerequisite three methods used in defining the test conditions: create_app(), setUp() and TearDown().  These are run sequentially around each unit test i.e. the database is setup, a given test is run, the database is torn down then on to the next test, rinse and repeat.  Essentially building a dummy database for the purposes of testing using sqlite (test.db) within which I instantiate some dummy data using for loops (adding to the Students and Houses tables).  
 
 Tests are defined in test_app.py in the tests folder and all classes and their respective methods are run when pytest is run.  This should be repeatable when this repo is cloned down.
-
-In addition to checking status codes and interogating response data, I have also included classes to test the contents of the data itself following HTTP requests and their respective responses.  By turning html into a string and decoding it one can determine that the change one has attempted to make has indeed been made and exists within the data itself rather than simply in the response (please see use of "assert" in the TestData class).
-
-The overall coverage of the tests is shown in the below image (I have since added additional tests though the coverage remains the same).
-
-<p align="center">
-<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="1000"/>
-</p>
 
 Ongoing testing is baked into the development process using a continuous integration pipeline (CIP) via Jenkins.
 
@@ -181,6 +173,19 @@ The two images encapsulate the idea of continous integration, whereby changes to
 
 ### Analysis - what was tested and why - summary of overall results
 
+Each route is tested, be it calling a function with a Post or Delete or be it simply an app html page displaying database contents to the user.  When sent a GET request, routes ought to return a 200 status code response indicating the app is running correctly when a user follows said route.
+
+In addition to checking status codes and interogating response data, I have also included classes to test the contents of the data itself following HTTP requests and their respective responses.  By turning html into a string and decoding it one can determine that the change one has attempted to make has indeed been made and exists within the data itself rather than simply in the response (please see use of "assert" in the TestData class).
+
+For example in the case of the edit functionality whereby a user wants to change a student's name or house or indeed change the name of a house one needs to test the route for the corresponding function (amend student or amend house).  If I supply a particular name in the form data does that name then appear in the actual db data following the post request?
+
+The overall coverage of the tests is shown in the below image (I have since added additional tests though the coverage remains the same).
+
+<p align="center">
+<img src="https://github.com/Harry84/DevOps-Core-Fundamental-Project/blob/main/images/Project%20Coverage%20report.JPG" width="1000"/>
+</p>
+
+The 98% coverage total indicates that most routes and functionality of the app have been tested and are working as intended.
 
 
 ### Front-end: Flask (HTML)
