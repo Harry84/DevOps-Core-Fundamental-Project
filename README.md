@@ -211,7 +211,7 @@ I have tried to test all available routes and data types - one can see which lin
 
 ### Version Control: Git
 
-I plan to use git branching to develop different features for my app.  Once I have a basic functionality working (app-setup) I will branch off when trying to tackle more complex features such as the update functionality via HTML.  THis should be evidenced via my commit history.
+I plan to use git branching to develop different features for my app.  Once I have a basic functionality working (app-setup) I will branch off when trying to tackle more complex features such as the update functionality via an HTML form.  This should be evidenced via my commit history.  This helps esnure the rest of the app retains its functionality whilst one individual element is being developed (although of course there may be dependencies) as it limits the changes to one portion of the code.  I am also then able to confirm the code is working as best I can on whatever feature branch I am on before submitting a pull request, helping to ensure there is always a working version of the code in continuous delivery.  It mimics best practice in a professional environment where there'd be a dev branch and multiple developers working on respective branches.  Proposed merges are then peer reviewed and any conflicts resolved beforehand.  This keeps the codebase functional as a whole. 
 
 ### Possible Future Development
 
